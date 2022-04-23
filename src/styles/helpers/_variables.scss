@@ -1,0 +1,43 @@
+$base_font: "Lora", sans-serif;
+$primary_font: "Open Sans", sans-serif;
+
+// colors
+$base: #252323;
+$blue: #23356b;
+$white: #fff;
+
+$beige-light: #fbf3ee;
+$blue-light: #e8edf9;
+$cyan: #00bdff;
+$green: #47bd93;
+$green-light: #ebf7f0;
+$grey-200: transparentize($base, 0.8);
+$grey-400: transparentize($base, 0.6);
+$grey-500: #cfd1df;
+$grey-600: transparentize($base, 0.4);
+$grey-700: #a8abc1;
+$orange: #f99d1c;
+$orange-light: #ffa959;
+$begonia: #ff6f7d;
+$pink: #f235a6;
+$pink-light: #fdeaf5;
+$red: #fe334a;
+$red-light: #f85969;
+$violet: #9442ef;
+$violet-light: #7c94de;
+$border-back: #dde0ea;
+$orchid: #ba55e9;
+
+//background
+$bg-grey: #f3f6fd;
+
+// border-radius
+$radius-4: 4px;
+$radius-10: 10px;
+
+// spacing
+$layout-gap-xs: 14px;
+$layout-gap-md: 30px;
+
+// transition
+$tr-duration: 0.2s;
