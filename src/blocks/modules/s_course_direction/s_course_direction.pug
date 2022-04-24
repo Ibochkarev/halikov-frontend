@@ -1,0 +1,36 @@
+-
+  const directionsItems = [
+    {
+      title: 'Брюки',
+      icon: './img/s-course-direction/icon-1.svg',
+    },
+    {
+      title: 'Пиджак',
+      icon: './img/s-course-direction/icon-2.svg',
+    },
+    {
+      title: 'Жилет',
+      icon: './img/s-course-direction/icon-3.svg',
+    },
+    {
+      title: 'Пальто',
+      icon: './img/s-course-direction/icon-2.svg',
+    },
+    {
+      title: 'Cорочки',
+      icon: './img/s-course-direction/icon-3.svg',
+    }
+  ]
+
+section.section.s-course-direction
+  .s-course-direction__bg
+    .l-default
+      .section
+        h2.s-course-direction__title.section__title.a-font_h2 Направления курсов
+        .s-course-direction__wrapper
+          each item in directionsItems
+            a.s-course-direction__item(href="#")
+              .s-course-direction__item-icon
+                img(src=item.icon, alt="", loading="lazy")
+              .s-course-direction__item-title.a-font_subtitle!=item.title
+

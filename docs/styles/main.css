@@ -628,76 +628,16 @@ h6,
   height: 1em;
 }
 
-.ico-mono-arrow-course {
-  width: 0.64em;
+.ico-mono-telegram {
+  width: 1.14em;
   height: 1em;
-  fill: #EB5757;
+  fill: tan;
 }
 
-.ico-mono-arrow {
-  width: 0.6em;
+.ico-mono-whatsapp {
+  width: 0.96em;
   height: 1em;
-  fill: #91A3FF;
-}
-
-.ico-mono-cloud {
-  width: 1.4em;
-  height: 1em;
-  fill: #CACDD2;
-}
-
-.ico-mono-dollar {
-  width: 0.61em;
-  height: 1em;
-  fill: #000;
-}
-
-.ico-mono-emblem {
-  width: 1.77em;
-  height: 1em;
-  fill: #B9975B;
-}
-
-.ico-mono-logo {
-  width: 4.98em;
-  height: 1em;
-  fill: #fff;
-}
-
-.ico-mono-mail {
-  width: 1.31em;
-  height: 1em;
-  fill: #000;
-}
-
-.ico-mono-map {
-  width: 0.7em;
-  height: 1em;
-  fill: initial;
-}
-
-.ico-mono-phone {
-  width: 1.03em;
-  height: 1em;
-  fill: #B9975B;
-}
-
-.ico-mono-rain {
-  width: 1em;
-  height: 1em;
-  fill: #CACDD2;
-}
-
-.ico-mono-sun {
-  width: 1em;
-  height: 1em;
-  fill: #12141B;
-}
-
-.ico-mono-suncloud {
-  width: 1.24em;
-  height: 1em;
-  fill: #CACDD2;
+  fill: tan;
 }
 
 .footer {
@@ -733,6 +673,11 @@ h6,
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
+  transition: all 0.4s ease;
+}
+
+.footer__nav-item:hover {
+  opacity: 0.7;
 }
 
 .footer__phone {
@@ -889,6 +834,63 @@ h6,
   margin-top: 1.875rem;
 }
 
+.s-course-direction__bg {
+  width: 100%;
+  background-image: url(../img/s-course-direction/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.s-course-direction__title {
+  text-align: center;
+}
+
+.s-course-direction__wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.s-course-direction__item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 1.5625rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #23356b;
+  transition: all 0.4s ease;
+}
+
+.s-course-direction__item:hover {
+  background-color: #d2b48c;
+}
+
+.s-course-direction__item:hover .s-course-direction__item-title {
+  color: #23356b;
+}
+
+.s-course-direction__item:hover img {
+  filter: invert(18%) sepia(12%) saturate(6231%) hue-rotate(200deg) brightness(30%) contrast(91%);
+}
+
+.s-course-direction__item-icon {
+  margin-right: 0.9375rem;
+  flex: none;
+}
+
+.s-course-direction__item-title {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+@media (min-width: 470px) {
+  .s-course-direction__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width: 575px) {
   .section__title {
     margin-bottom: 2rem;
@@ -991,6 +993,14 @@ h6,
   .footer__logo {
     display: none;
   }
+
+  .s-course-direction__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .s-course-direction__item {
+    padding: 0.9375rem 2.5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1041,6 +1051,10 @@ h6,
   .s-content__item-col {
     flex-basis: 50%;
   }
+
+  .s-course-direction__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1061,6 +1075,12 @@ h6,
 
   .s-content__item-title {
     margin: 0 0 3.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .s-course-direction__wrapper {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 

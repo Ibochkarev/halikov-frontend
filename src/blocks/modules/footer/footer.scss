@@ -47,6 +47,11 @@
       text-transform: uppercase;
       text-decoration: none;
       color: $white;
+      @include tr(all);
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 
