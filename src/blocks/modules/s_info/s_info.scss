@@ -1,10 +1,11 @@
 .s-info {
-  overflow: hidden;
-  width: 100%;
-  background-image: url(../img/s-info/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  &__bg {
+    width: 100%;
+    background-image: url(../img/s-info/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
   &__wrapper {
     display: grid;
@@ -27,18 +28,30 @@
     }
 
     &-title {
-      margin-bottom: rem(30);
+      margin-bottom: rem(15);
+
+      @media (min-width: 992px) {
+        margin-bottom: rem(30);
+      }
       text-transform: uppercase;
     }
 
     &-icon {
-      margin-bottom: rem(30);
+      margin-bottom: rem(15);
+
+      @media (min-width: 992px) {
+        margin-bottom: rem(30);
+      }
 
       img {
         display: block;
         width: auto;
-        height: rem(80);
+        height: rem(45);
         margin: 0 auto;
+
+        @media (min-width: 992px) {
+          height: rem(75);
+        }
       }
     }
 

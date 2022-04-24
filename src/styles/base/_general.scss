@@ -43,7 +43,7 @@ body {
     padding: rem(40) 0;
   }
   @media screen and (min-width: 1200px) {
-    padding: rem(80) 0;
+    padding: rem(60) 0;
   }
 
   &__title {
@@ -77,9 +77,13 @@ body {
   text-decoration: none;
   color: $blue;
   border: rem(1) solid;
-  border-color: #d2b48c;
+  border-color: $light-brown;
   outline: none;
   @include tr(all);
+
+  @media (max-width: 574px) {
+    width: 100%;
+  }
 
   @media (min-width: 768px) {
     font-size: rem(18);
@@ -100,6 +104,27 @@ body {
     border-color: $blue;
     background-color: $blue;
   }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    &::before {
+      display: inline-block;
+      width: 1em;
+      font-weight: bold;
+      color: $light-brown;
+      content: "\2022";
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 // typography

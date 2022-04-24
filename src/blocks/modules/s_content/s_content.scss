@@ -1,0 +1,53 @@
+.s-content {
+  &__item {
+    display: flex;
+    grid-gap: rem(25);
+    flex-wrap: wrap;
+
+    @media (min-width: 992px) {
+      flex-wrap: nowrap;
+      grid-gap: rem(50);
+    }
+
+    &-col {
+      flex-basis: 100%;
+
+      @media (min-width: 992px) {
+        flex-basis: 50%;
+      }
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    &-title {
+      text-transform: uppercase;
+      color: $blue;
+
+      @media screen and (min-width: 768px) {
+        margin: 0 0 rem(32);
+        font-size: rem(40);
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin: 0 0 rem(50);
+      }
+    }
+
+    &-image {
+    }
+
+    &-text {
+      font-family: $primary_font;
+    }
+
+    &-link {
+      margin-top: rem(30);
+
+      @media screen and (min-width: 768px) {
+        margin-top: rem(40);
+      }
+    }
+  }
+}

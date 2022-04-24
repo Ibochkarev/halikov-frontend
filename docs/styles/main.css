@@ -498,6 +498,25 @@ body {
   background-color: #23356b;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li::before {
+  display: inline-block;
+  width: 1em;
+  font-weight: bold;
+  color: #d2b48c;
+  content: "\2022";
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 h1,
 .a-font_h1 {
   margin: 0 0 1.5rem;
@@ -699,8 +718,7 @@ h6,
   font-family: "Open Sans", sans-serif;
 }
 
-.s-info {
-  overflow: hidden;
+.s-info__bg {
   width: 100%;
   background-image: url(../img/s-info/bg.jpg);
   background-size: cover;
@@ -722,18 +740,18 @@ h6,
 }
 
 .s-info__item-title {
-  margin-bottom: 1.875rem;
+  margin-bottom: 0.9375rem;
   text-transform: uppercase;
 }
 
 .s-info__item-icon {
-  margin-bottom: 1.875rem;
+  margin-bottom: 0.9375rem;
 }
 
 .s-info__item-icon img {
   display: block;
   width: auto;
-  height: 5rem;
+  height: 2.8125rem;
   margin: 0 auto;
 }
 
@@ -761,6 +779,33 @@ h6,
 .s-teacher__text {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 3.125rem;
+}
+
+.s-content__item {
+  display: flex;
+  grid-gap: 1.5625rem;
+  flex-wrap: wrap;
+}
+
+.s-content__item-col {
+  flex-basis: 100%;
+}
+
+.s-content__item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.s-content__item-title {
+  text-transform: uppercase;
+  color: #23356b;
+}
+
+.s-content__item-text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.s-content__item-link {
+  margin-top: 1.875rem;
 }
 
 @media screen and (min-width: 575px) {
@@ -836,6 +881,15 @@ h6,
     font-size: 1.125rem;
     line-height: 1.5;
   }
+
+  .s-content__item-title {
+    margin: 0 0 2rem;
+    font-size: 2.5rem;
+  }
+
+  .s-content__item-link {
+    margin-top: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -864,14 +918,35 @@ h6,
     padding: 3.125rem 2.5rem;
   }
 
+  .s-info__item-title {
+    margin-bottom: 1.875rem;
+  }
+
+  .s-info__item-icon {
+    margin-bottom: 1.875rem;
+  }
+
+  .s-info__item-icon img {
+    height: 4.6875rem;
+  }
+
   .s-teacher__inner {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .s-content__item {
+    flex-wrap: nowrap;
+    grid-gap: 3.125rem;
+  }
+
+  .s-content__item-col {
+    flex-basis: 50%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 5rem 0;
+    padding: 3.75rem 0;
   }
 
   h1,
@@ -883,6 +958,17 @@ h6,
   h2,
   .a-font_h2 {
     margin: 0 0 3.125rem;
+  }
+
+  .s-content__item-title {
+    margin: 0 0 3.125rem;
+  }
+}
+
+@media (max-width: 574px) {
+  .button,
+  .btn {
+    width: 100%;
   }
 }
 

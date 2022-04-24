@@ -18,12 +18,13 @@
   ]
 
 section.section.s-info
-  .l-default
-    .s-info__wrapper
-      each item in infoItems
-        .s-info__item
-          .s-info__item-icon
-            img(src=item.icon, alt="", loading="lazy")
-          .s-info__item-title.a-font_subtitle!=item.title
-          .s-info__item-text.a-font_caption!=item.text
+  .s-info__bg
+    .l-default
+      .s-info__wrapper.section
+        each item in infoItems
+          .s-info__item
+            .s-info__item-icon
+              img(src=item.icon, alt="", loading="lazy")
+            .s-info__item-title.a-font_subtitle!=item.title
+            .s-info__item-text.a-font_caption!=item.text
 
