@@ -1,0 +1,29 @@
+-
+  const infoItems = [
+    {
+      title: 'Для кого курс',
+      icon: './img/s-info/icon_1.svg',
+      text: '<p>Курсы предназначены как для новичков, так и для проффесиналов.</p><p>Для тех кто хочет получить международный опыт Bespoke</p>',
+    },
+    {
+      title: 'Для кого курс',
+      text: '<p>Записанные видеоуроки в логической последовательности (технологии)</p><p>Материалы на каждое изделие что потребуется</p><p>Закрытый чат группы</p><p>Проверка домашних заданий</p>',
+      icon: './img/s-info/icon_2.svg',
+    },
+    {
+      title: 'Для кого курс',
+      text: '<p>Знания + изделия класса Люкс</p><p>Навыки и знания отработанные на практике</p><p>Сертификаты о прохождении курса</p>',
+      icon: './img/s-info/icon_3.svg',
+    }
+  ]
+
+section.section.s-info
+  .l-default
+    .s-info__wrapper
+      each item in infoItems
+        .s-info__item
+          .s-info__item-icon
+            img(src=item.icon, alt="", loading="lazy")
+          .s-info__item-title.a-font_subtitle!=item.title
+          .s-info__item-text.a-font_caption!=item.text
+

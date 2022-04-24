@@ -563,6 +563,18 @@ h6,
   margin: 0;
 }
 
+.a-font_subtitle {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.a-font_caption {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.34;
+}
+
 .a-font_text {
   font-family: "Lora", sans-serif;
   font-size: 1rem;
@@ -692,6 +704,52 @@ h6,
   width: 100%;
 }
 
+.s-about__text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.s-info {
+  overflow: hidden;
+  width: 100%;
+  background-image: url(../img/s-info/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.s-info__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2.5rem;
+}
+
+.s-info__item {
+  padding: 3.125rem 2.5rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(35, 53, 107, 0.95);
+}
+
+.s-info__item-title {
+  margin-bottom: 1.875rem;
+  text-transform: uppercase;
+}
+
+.s-info__item-icon {
+  margin-bottom: 1.875rem;
+}
+
+.s-info__item-icon img {
+  display: block;
+  width: auto;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+.s-info__item-text {
+  font-family: "Open Sans", sans-serif;
+}
+
 @media screen and (min-width: 575px) {
   .section__title {
     margin-bottom: 2rem;
@@ -699,6 +757,10 @@ h6,
 }
 
 @media screen and (min-width: 576px) {
+  .a-font_caption {
+    font-size: 1rem;
+  }
+
   .a-font_text-xl {
     font-size: 1rem;
     line-height: 1.37;
@@ -790,6 +852,10 @@ h6,
 
   .s-about__info {
     width: 55%;
+  }
+
+  .s-info__wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

@@ -1,0 +1,44 @@
+.s-info {
+  overflow: hidden;
+  width: 100%;
+  background-image: url(../img/s-info/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: rem(40);
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    padding: rem(50) rem(40);
+    text-align: center;
+    color: $white;
+    background: rgba(35, 53, 107, 0.95);
+
+    &-title {
+      margin-bottom: rem(30);
+      text-transform: uppercase;
+    }
+
+    &-icon {
+      margin-bottom: rem(30);
+      img {
+        display: block;
+        width: auto;
+        height: rem(80);
+        margin: 0 auto;
+      }
+    }
+
+    &-text {
+      font-family: $primary_font;
+    }
+  }
+}

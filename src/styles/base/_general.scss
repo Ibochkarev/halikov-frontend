@@ -194,6 +194,20 @@ h6 {
     margin: 0;
     @extend h6;
   }
+  &_subtitle {
+    font-size: rem(22);
+    font-weight: 600;
+    line-height: rem(28);
+  }
+  &_caption {
+    font-family: $primary_font;
+    font-size: rem(14);
+    line-height: 1.34;
+
+    @media screen and (min-width: 576px) {
+      font-size: rem(16);
+    }
+  }
   &_text {
     font-family: $base_font;
     font-size: rem(16);
