@@ -103,6 +103,11 @@
       &:not(:last-child) {
         margin-right: rem(18);
       }
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 }

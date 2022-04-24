@@ -1,0 +1,69 @@
+.s-infoblock {
+  &__inner {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__info {
+    padding: 0 0 rem(25);
+    flex-basis: 100%;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      padding: rem(45) 0;
+      flex-basis: 60%;
+    }
+  }
+
+  &__title {
+    font-size: rem(22);
+    line-height: 1.4;
+
+    @media (min-width: 768px) {
+      font-size: rem(30);
+    }
+  }
+
+  &__note {
+    margin-bottom: rem(30);
+  }
+
+  &__button {
+    color: $white;
+
+    &:hover {
+      color: $blue;
+      border-color: $light-brown;
+      background-color: $light-brown;
+    }
+  }
+
+  &__photo {
+    overflow: hidden;
+    position: relative;
+    padding-top: rem(25);
+    flex-basis: 100%;
+
+    @media (min-width: 768px) {
+      padding-top: 0;
+      flex-basis: 40%;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

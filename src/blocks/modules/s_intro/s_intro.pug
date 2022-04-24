@@ -1,0 +1,34 @@
+-
+  const introItems = [
+    {
+      text: 'Курс ведет Халиков Рамиль. Предаватель из Росии, ведет деятельность с 2004 г.',
+      icon: './img/s-intro/people.svg',
+    },
+    {
+      text: 'Переводы на английский язык',
+      icon: './img/s-intro/lang.svg',
+    },
+    {
+      text: 'После курса возможно открыть свое ателье',
+      icon: './img/s-intro/studio.svg',
+    }
+  ]
+
+section.section.s-intro
+  .l-default
+    .s-intro__wrapper
+      .s-intro__left
+        h1.s-intro__title Bespoke ACADEMY
+        h3.s-intro__subtitle Онлайн-курсы
+        .s-intro__text.a-font_text
+          p Приветствую Вас! На этом ресурсе найдете ответы на интересующие вас вопросы в технике Bespoke.
+          p Все кто купят курсы пакет Premium получат скидку 10%
+        a.s-intro__button.button.button--red(href="#") Все курсы
+      .s-intro__right
+        .s-intro-info
+          each item in introItems
+            .s-intro-info__item
+              .s-intro-info__item-icon
+                img(src=item.icon, alt="")
+              .s-intro-info__item-text.a-font_text!=item.text
+
