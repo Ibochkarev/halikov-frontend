@@ -1,0 +1,103 @@
+.footer {
+  padding: rem(30) 0 rem(35);
+  color: $white;
+  background-color: $blue;
+
+  @media (min-width: 768px) {
+    padding: rem(40) 0 rem(100);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: rem(35);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: rem(40);
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: rem(70);
+    }
+  }
+
+  &__logo {
+    display: block;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    img {
+      height: auto;
+      max-width: 101px;
+    }
+  }
+
+  &__nav {
+    columns: 2;
+
+    &-item {
+      display: block;
+      font-size: rem(14);
+      font-weight: 500;
+      line-height: rem(30);
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: rem(10);
+    font-size: rem(30);
+    font-weight: 700;
+    line-height: rem(38);
+    text-decoration: none;
+    color: $white;
+
+    @media (min-width: 1440px) {
+      margin-bottom: rem(32);
+      font-size: rem(40);
+    }
+  }
+
+  &__address {
+    font-size: rem(16);
+    line-height: rem(20);
+  }
+
+  &__link {
+    cursor: pointer;
+    display: block;
+    margin-bottom: rem(15);
+    text-decoration: none;
+    color: $white;
+    @include tr(all);
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      display: block;
+      @include tr(all);
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:not(:last-child) {
+        margin-right: rem(18);
+      }
+    }
+  }
+}
