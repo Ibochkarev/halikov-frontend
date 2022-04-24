@@ -17,10 +17,14 @@
   }
 
   &__item {
-    padding: rem(50) rem(40);
+    padding: rem(40) rem(30);
     text-align: center;
     color: $white;
     background: rgba(35, 53, 107, 0.95);
+
+    @media (min-width: 992px) {
+      padding: rem(50) rem(40);
+    }
 
     &-title {
       margin-bottom: rem(30);
@@ -29,6 +33,7 @@
 
     &-icon {
       margin-bottom: rem(30);
+
       img {
         display: block;
         width: auto;

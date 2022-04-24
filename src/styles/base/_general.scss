@@ -65,36 +65,40 @@ body {
 .button,
 .btn {
   cursor: pointer;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: rem(48);
-  padding: rem(12);
+  min-width: rem(205);
+  padding: rem(12) rem(15);
   font-size: rem(14);
-  font-weight: 700;
+  font-weight: 500;
+  text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
-  border: none;
-  border-radius: 4px;
+  color: $blue;
+  border: rem(1) solid;
+  border-color: #d2b48c;
   outline: none;
   @include tr(all);
 
   @media (min-width: 768px) {
-    min-height: rem(60);
     font-size: rem(18);
-  }
-
-  &_red {
-    color: #fff;
-    background: $red;
-    &:hover {
-      background: $red-light;
-    }
   }
 
   &:disabled {
     opacity: 0.4;
+  }
+
+  &--red {
+    color: $white;
+    background-color: $red;
+    border-color: $red;
+  }
+
+  &:hover {
+    color: $white;
+    border-color: $blue;
+    background-color: $blue;
   }
 }
 
@@ -126,7 +130,7 @@ h2 {
   }
 
   @media screen and (min-width: 1200px) {
-    margin: 0 0 rem(60);
+    margin: 0 0 rem(50);
   }
 }
 
@@ -175,7 +179,6 @@ h6 {
     @extend h1;
   }
   &_h2 {
-    margin: 0;
     @extend h2;
   }
   &_h3 {

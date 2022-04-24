@@ -1,5 +1,5 @@
-.s-about {
-  &__wrapper {
+.s-teacher {
+  &__inner {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: rem(40);
@@ -11,15 +11,19 @@
 
   &__photo {
     img {
-      display: block;
       width: 100%;
       height: auto;
-      max-width: rem(470);
-      margin: 0 auto;
+      max-width: rem(450);
+      border-radius: 100%;
     }
+  }
+
+  &__name {
+    color: $blue;
   }
 
   &__text {
     font-family: $primary_font;
+    margin-bottom: rem(50);
   }
 }
