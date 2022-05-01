@@ -1,0 +1,63 @@
+-
+  const teamsItems = [
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название статьи',
+      date: '04.04.2022',
+      text: 'Краткое описание',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название статьи',
+      date: '04.04.2022',
+      text: 'Краткое описание',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название статьи',
+      date: '04.04.2022',
+      text: 'Краткое описание',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название статьи',
+      date: '04.04.2022',
+      text: 'Краткое описание',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название статьи',
+      date: '04.04.2022',
+      text: 'Краткое описание',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название статьи',
+      date: '04.04.2022',
+      text: 'Краткое описание',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название статьи',
+      date: '04.04.2022',
+      text: 'Краткое описание',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название статьи',
+      date: '04.04.2022',
+      text: 'Краткое описание',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название статьи',
+      date: '04.04.2022',
+      text: 'Краткое описание',
+    },
+  ]
+
+section.section.s-blog
+  .l-default
+    .s-blog__wrapper
+      each item in teamsItems
+        +m_card(item.title, item.image, item.text, item.date, item.link)

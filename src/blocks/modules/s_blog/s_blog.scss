@@ -1,0 +1,19 @@
+.s-blog {
+  &__wrapper {
+    display: grid;
+    margin-bottom: rem(30);
+    grid-gap: rem(16);
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 575px) {
+      grid-gap: rem(24);
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: rem(67);
+      grid-gap: rem(40);
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

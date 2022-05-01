@@ -4,6 +4,8 @@ PageList:
   - file: homepage.html
     ready: 80
   - file: teams.html
-    ready: 10
+    ready: 80
+  - file: blog.html
+    ready: 80
   - file: 404.html
     ready: 1
