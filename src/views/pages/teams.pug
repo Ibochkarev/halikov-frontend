@@ -1,0 +1,13 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Команда"
+
+block content
+  .l-default
+    h1.page__title.a-font_h1= title
+  include ../../../src/blocks/modules/s_teams/s_teams.pug
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

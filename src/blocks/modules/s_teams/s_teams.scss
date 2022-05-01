@@ -1,0 +1,48 @@
+.s-teams {
+  &__wrapper {
+    display: grid;
+    grid-gap: rem(16);
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 575px) {
+      grid-gap: rem(32);
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      grid-gap: rem(50);
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(20);
+
+    @media (min-width: 1200px) {
+      margin-bottom: rem(60);
+    }
+
+    &-photo {
+      margin-bottom: rem(10);
+
+      @media (min-width: 768px) {
+        margin-bottom: rem(20);
+      }
+
+      img {
+        width: rem(100);
+        height: rem(100);
+        border-radius: 100%;
+
+        @media (min-width: 768px) {
+          width: rem(158);
+          height: rem(158);
+        }
+      }
+    }
+
+    &-title {
+      color: $blue;
+    }
+  }
+}

@@ -2,6 +2,8 @@ ProjectTitle: Halikov
 
 PageList:
   - file: homepage.html
-    ready: 1
+    ready: 80
+  - file: teams.html
+    ready: 10
   - file: 404.html
     ready: 1
