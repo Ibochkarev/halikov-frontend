@@ -28,10 +28,18 @@
   <body>
     <div class="wrapper">
       <div class="l-default">
-        <h1 class="page__title a-font_h1">Блог</h1>
+        <div class="breadcrumb">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <!-- if breadcrumb is single--><span class="breadcrumb__link">Главная</span>
+            </li>
+            <li class="breadcrumb__item"><span class="breadcrumb__link-current">Блог</span></li>
+          </ul>
+        </div>
       </div>
       <section class="section s-blog">
         <div class="l-default">
+          <h1 class="page__title a-font_h1">Блог</h1>
           <div class="s-blog__wrapper">
             <div class="m-card">
               <div class="m-card__overlay"></div><img class="m-card__image" src="./img/s-blog/photo.jpg" alt=""/>

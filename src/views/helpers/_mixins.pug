@@ -20,7 +20,7 @@ mixin webp(name, typeImg, lazy, alt)
       source(srcset="/img/"+name+".webp" type="image/webp")
       source(srcset="/img/"+name+"."+typeImg+"" type="image/"+typeImg+"")
       img(src="/img/"+name+"."+typeImg+"" alt=""+alt+"")
-  else 
+  else
     picture
       source(data-srcset="/img/"+name+".webp" type="image/webp")
       source(data-srcset="/img/"+name+"."+typeImg+"" type="image/"+typeImg+"")

@@ -736,6 +736,46 @@ h6,
   background-color: #d2b48c;
 }
 
+.breadcrumb__list {
+  list-style: none;
+}
+
+.breadcrumb__item {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  vertical-align: top;
+}
+
+.breadcrumb__item::before {
+  display: none;
+}
+
+.breadcrumb__item:not(:last-child):after {
+  margin-right: 4px;
+  margin-left: 4px;
+  font-size: 0.75rem;
+  color: #737373;
+  content: "/";
+}
+
+.breadcrumb__item:not(:last-child):hover {
+  color: #23356b;
+}
+
+.breadcrumb__link:hover {
+  color: #23356b;
+}
+
+.breadcrumb__link-current {
+  color: #737373;
+}
+
+.breadcrumb__list {
+  padding: 0;
+  list-style-type: none;
+}
+
 .footer {
   padding: 1.875rem 0 2.1875rem;
   color: #fff;

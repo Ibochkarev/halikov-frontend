@@ -1,0 +1,43 @@
+.breadcrumb {
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    font-family: $primary_font;
+    font-size: rem(12);
+    vertical-align: top;
+
+    &::before {
+      display: none;
+    }
+
+    &:not(:last-child):after {
+      margin-right: 4px;
+      margin-left: 4px;
+      font-size: rem(12);
+      color: $grey;
+      content: "/";
+    }
+
+    &:not(:last-child):hover {
+      color: $blue;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__link-current {
+    color: $grey;
+  }
+
+  &__list {
+    padding: 0;
+    list-style-type: none;
+  }
+}

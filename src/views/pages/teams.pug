@@ -6,7 +6,7 @@ block variables
 
 block content
   .l-default
-    h1.page__title.a-font_h1= title
+    +breadcrumb(['Главная'], 'Команда')
   include ../../../src/blocks/modules/s_teams/s_teams.pug
 block scripts
   script(defer src="./js/vendor.js")
