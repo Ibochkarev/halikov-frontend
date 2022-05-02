@@ -62,3 +62,4 @@ section.section.s-blog
     .s-blog__wrapper
       each item in teamsItems
         +m_card(item.title, item.image, item.text, item.date, item.link)
+    +pagination(5, 3, 4, 9, arrows)

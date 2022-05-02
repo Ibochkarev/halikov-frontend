@@ -3,7 +3,6 @@ mixin breadcrumb(items, last)
     ul.breadcrumb__list&attributes(attributes)
       each item in items
         li.breadcrumb__item
-          // if breadcrumb is single
           if (items.length === 1)
             span.breadcrumb__link= item
           else
