@@ -1187,6 +1187,21 @@ h6,
   text-transform: uppercase;
 }
 
+.s-intro--offline {
+  text-align: center;
+}
+
+.s-intro__inner {
+  padding: 1.5625rem;
+  color: #fff;
+  background-color: #23356b;
+}
+
+.s-intro__inner .s-intro__text {
+  max-width: 56.25rem;
+  margin: 0 auto;
+}
+
 .s-intro__wrapper {
   display: flex;
   padding: 1.5625rem;
@@ -1224,6 +1239,17 @@ h6,
 .s-intro__text {
   max-width: 28.4375rem;
   margin-bottom: 1.5625rem;
+}
+
+.s-intro__note {
+  margin-bottom: 1.5625rem;
+  font-family: "Open Sans", sans-serif;
+  color: #d2b48c;
+}
+
+.s-intro__button {
+  width: 100%;
+  max-width: 14.375rem;
 }
 
 .s-intro__button:hover {
@@ -1482,6 +1508,10 @@ h6,
     padding: 0.9375rem 2.5rem;
   }
 
+  .s-intro__inner {
+    padding: 2.5rem;
+  }
+
   .s-intro__wrapper {
     padding: 2.5rem;
   }
@@ -1602,6 +1632,10 @@ h6,
 
   .s-course-direction__wrapper {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .s-intro__inner {
+    padding: 3.75rem;
   }
 
   .s-intro__wrapper {

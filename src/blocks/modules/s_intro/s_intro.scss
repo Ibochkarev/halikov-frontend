@@ -1,4 +1,27 @@
 .s-intro {
+  &--offline {
+    text-align: center;
+  }
+
+  &__inner {
+    padding: rem(25);
+    color: $white;
+    background-color: $blue;
+
+    @media (min-width: 768px) {
+      padding: rem(40);
+    }
+
+    @media (min-width: 992px) {
+      padding: rem(60);
+    }
+
+    .s-intro__text {
+      max-width: rem(900);
+      margin: 0 auto;
+    }
+  }
+
   &__wrapper {
     display: flex;
     padding: rem(25);
@@ -65,7 +88,16 @@
     margin-bottom: rem(25);
   }
 
+  &__note {
+    margin-bottom: rem(25);
+    font-family: $primary_font;
+    color: $light-brown;
+  }
+
   &__button {
+    width: 100%;
+    max-width: rem(230);
+
     &:hover {
       border-color: $white;
     }
