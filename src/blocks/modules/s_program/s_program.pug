@@ -2,33 +2,58 @@ section.section.s-program
   .l-default
     h2.section__title.a-font_h2 Программа курса:
     .s-program__list
-      each item in programsItems
-        .s-program__item
-          .s-program__item-content
-            .s-program__item-col
-              .s-program__item-title.a-font_xxl!= item.title
-              ul
-                each liItem in item.content
-                  li.a-font_text!= liItem.text
-            if item.teacherTitle
+      each item, index in programsItems
+        if (index > 2)
+          .s-program__item(style="display: none;")
+            .s-program__item-content
               .s-program__item-col
-                .s-program__item-title ПРЕПОДАВАТЕЛЬ
-                .s-program__teacher
-                  .s-program__teacher-photo
-                    img(src= item.teacherPhoto, alt!= item.teacherTitle)
-                  .s-program__teacher-title.a-font_text!= item.teacherTitle
-          .s-program__item-durations
-            each row in item.durations
-              .s-program__item-duration
-                .s-program__item-duration__title.a-font_text-m!= row.title
-                .s-program__item-duration__text.a-font_text-m!= row.text
-          if item.list
-            .s-program__item-list
-              each card in item.list
-                +m_card(card.title, card.image, card.text)
+                .s-program__item-title.a-font_xxl!= item.title
+                ul
+                  each liItem in item.content
+                    li.a-font_text!= liItem.text
+              if item.teacherTitle
+                .s-program__item-col
+                  .s-program__item-title ПРЕПОДАВАТЕЛЬ
+                  .s-program__teacher
+                    .s-program__teacher-photo
+                      img(src= item.teacherPhoto, alt!= item.teacherTitle)
+                    .s-program__teacher-title.a-font_text!= item.teacherTitle
+            .s-program__item-durations
+              each row in item.durations
+                .s-program__item-duration
+                  .s-program__item-duration__title.a-font_text-m!= row.title
+                  .s-program__item-duration__text.a-font_text-m!= row.text
+            if item.list
+              .s-program__item-list
+                each card in item.list
+                  +m_card(card.title, card.image, card.text)
+        else
+          .s-program__item
+            .s-program__item-content
+              .s-program__item-col
+                .s-program__item-title.a-font_xxl!= item.title
+                ul
+                  each liItem in item.content
+                    li.a-font_text!= liItem.text
+              if item.teacherTitle
+                .s-program__item-col
+                  .s-program__item-title ПРЕПОДАВАТЕЛЬ
+                  .s-program__teacher
+                    .s-program__teacher-photo
+                      img(src= item.teacherPhoto, alt!= item.teacherTitle)
+                    .s-program__teacher-title.a-font_text!= item.teacherTitle
+            .s-program__item-durations
+              each row in item.durations
+                .s-program__item-duration
+                  .s-program__item-duration__title.a-font_text-m!= row.title
+                  .s-program__item-duration__text.a-font_text-m!= row.text
+            if item.list
+              .s-program__item-list
+                each card in item.list
+                  +m_card(card.title, card.image, card.text)
       if (showMoreProgram == 1)
         .s-program__more
-          button.button.button--blue(type="button") Посмотреть всю программу
+          button.s-program__button.button.button--blue(type="button") Посмотреть всю программу
           svg(width='72' height='21' viewBox='0 0 72 21' fill='none' xmlns='http://www.w3.org/2000/svg')
             path(d='M1 4L36 19.5L71.5 4' stroke='#D2B48C')
             path(d='M13.5 1L36.0806 11L58.9839 1' stroke='#D2B48C')
