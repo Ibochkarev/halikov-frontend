@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -848,6 +850,73 @@ h6,
   color: #737373;
 }
 
+.accordion-item {
+  cursor: pointer;
+  width: 100%;
+}
+
+.accordion-item:not(:last-child) {
+  border-bottom: 0.0625rem solid #d2b48c;
+}
+
+.accordion-item__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.accordion-item__question-title {
+  color: #23356b;
+}
+
+.accordion-item__question-icon {
+  transition: 0.2s all ease;
+}
+
+.accordion-item__question.is-active .accordion-item__question-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-item__answer {
+  display: none;
+  padding: 0 0 0.75rem 0;
+}
+
+.accordion-item__answer.is-active {
+  display: block;
+}
+
+.accordion-item__answer-text {
+  max-width: 50rem;
+}
+
+.accordion-item__answer-text ul {
+  list-style: inside none;
+}
+
+.accordion-item__answer-text ul li {
+  position: relative;
+  margin: 0.25rem 0;
+  padding-left: 1rem;
+}
+
+.accordion-item__answer-text ul li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "—";
+}
+
+.accordion-item__answer-text ol {
+  margin-left: 1rem;
+}
+
+.accordion-item__answer-text ol li {
+  margin: 0.25rem 0;
+  padding-left: 0.5rem;
+}
+
 .footer {
   padding: 1.875rem 0 2.1875rem;
   color: #fff;
@@ -1437,6 +1506,10 @@ h6,
     opacity: 0;
   }
 
+  .accordion-item__answer {
+    padding: 0 0 1rem 0;
+  }
+
   .footer__wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4.375rem;
@@ -1526,6 +1599,16 @@ h6,
     margin: 0 0 3.75rem;
   }
 
+  .accordion-item__answer-text ul li {
+    margin: 0.75rem 0;
+    padding-left: 1.25rem;
+  }
+
+  .accordion-item__answer-text ol li {
+    margin: 0.75rem 0;
+    padding-left: 0.625rem;
+  }
+
   .s-content__item-title {
     margin: 0 0 3.125rem;
   }
@@ -1556,6 +1639,12 @@ h6,
   .footer__phone {
     margin-bottom: 2rem;
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .accordion-item__question {
+    margin: 0.625rem 0;
   }
 }
 

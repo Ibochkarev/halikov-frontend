@@ -1,2 +1,2 @@
 import "%modules%/header/header";
-import "%modules%/footer/footer";
+import "%modules%/s_faq/s_faq";

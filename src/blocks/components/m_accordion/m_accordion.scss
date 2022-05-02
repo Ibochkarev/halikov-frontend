@@ -1,0 +1,86 @@
+.accordion-item {
+  cursor: pointer;
+  width: 100%;
+
+  &:not(:last-child) {
+    border-bottom: rem(1) solid $light-brown;
+  }
+
+  &__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: rem(12) 0;
+
+    @media (max-width: 992px) {
+      margin: rem(10) 0;
+    }
+
+    &-title {
+      color: $blue;
+    }
+
+    &-icon {
+      transition: 0.2s all ease;
+    }
+
+    &.is-active {
+      .accordion-item__question-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__answer {
+    display: none;
+    padding: 0 0 rem(12) 0;
+
+    @media (min-width: 992px) {
+      padding: 0 0 rem(16) 0;
+    }
+
+    &.is-active {
+      display: block;
+    }
+
+    &-text {
+      max-width: rem(800);
+
+      ul {
+        list-style: inside none;
+
+        & li {
+          position: relative;
+          margin: rem(4) 0;
+          padding-left: rem(16);
+
+          @media screen and (min-width: 1200px) {
+            margin: rem(12) 0;
+            padding-left: rem(20);
+          }
+
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "—";
+          }
+        }
+      }
+
+      ol {
+        margin-left: rem(16);
+
+        li {
+          margin: rem(4) 0;
+          padding-left: rem(8);
+
+          @media screen and (min-width: 1200px) {
+            margin: rem(12) 0;
+            padding-left: rem(10);
+          }
+        }
+      }
+    }
+  }
+}
