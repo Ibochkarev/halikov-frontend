@@ -1,4 +1,4 @@
-mixin m_accordion_item(question, answer, index,classActive)
+mixin m_accordion_item(question, answer, index, classActive)
   .accordion-item
     .accordion-item__question(data-tab-target="tab_" + index, class!= classActive)
       .accordion-item__question-title.a-font_text!= question
