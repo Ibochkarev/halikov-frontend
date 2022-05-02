@@ -51,7 +51,7 @@ section.section.s-program
               .s-program__item-list
                 each card in item.list
                   +m_card(card.title, card.image, card.text)
-      if (showMoreProgram == 1)
+      if (programsItems.length > 3)
         .s-program__more
           button.s-program__button.button.button--blue(type="button") Посмотреть всю программу
           svg(width='72' height='21' viewBox='0 0 72 21' fill='none' xmlns='http://www.w3.org/2000/svg')
