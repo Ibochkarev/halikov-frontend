@@ -1,0 +1,33 @@
+-
+  const themesItems = [
+    {
+      title: 'Крой'
+    },
+    {
+      title: 'Снятие мерок'
+    },
+    {
+      title: 'Лекало'
+    },
+    {
+      title: 'Обработка'
+    },
+    {
+      title: 'Заготовка карманов'
+    },
+    {
+      title: 'Воротник'
+    }
+  ]
+
+section.section.s-themes-education
+  .l-default
+    .s-themes-education__wrapper
+      .s-themes-education__col
+        h2.section__title.a-font_h2 Темы обучения:
+        .s-themes-education__items
+          each item in themesItems
+            +m_list_item(item.title)
+      .s-themes-education__col
+        .s-themes-education__image
+          img(src="./img/s-about/photo.jpg", alt="", loading="lazy")

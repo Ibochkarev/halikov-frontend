@@ -1,0 +1,31 @@
+.s-themes-education {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: rem(40);
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .m-list-item {
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+
+      @media (min-width: 992px) {
+        margin-bottom: rem(40);
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      display: block;
+      max-width: rem(440);
+    }
+  }
+}

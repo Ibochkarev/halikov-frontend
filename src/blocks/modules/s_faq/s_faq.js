@@ -10,9 +10,11 @@ window.addEventListener("load", function (event) {
       answer.forEach(tabContent => {
         tabContent.classList.remove('is-active')
       })
+
       questions.forEach(tab => {
         tab.classList.remove('is-active')
       })
+
       tab.classList.add('is-active')
       target.classList.add('is-active')
     })

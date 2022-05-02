@@ -1,0 +1,27 @@
+.m-list-item {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: rem(10);
+
+    @media (min-width: 992px) {
+      margin-right: rem(16);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: rem(42);
+
+      @media (min-width: 992px) {
+        max-width: rem(80);
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $blue;
+  }
+}

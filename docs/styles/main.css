@@ -638,8 +638,8 @@ h6,
   height: 70px;
 }
 
-.ico-color-brainLOL {
-  width: 1em;
+.ico-color-icon_pattern {
+  width: 4.37em;
   height: 1em;
 }
 
@@ -915,6 +915,26 @@ h6,
 .accordion-item__answer-text ol li {
   margin: 0.25rem 0;
   padding-left: 0.5rem;
+}
+
+.m-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.m-list-item__icon {
+  margin-right: 0.625rem;
+}
+
+.m-list-item__icon img {
+  width: 100%;
+  height: auto;
+  max-width: 2.625rem;
+}
+
+.m-list-item__title {
+  font-weight: 700;
+  color: #23356b;
 }
 
 .footer {
@@ -1304,6 +1324,26 @@ h6,
   grid-template-columns: repeat(1, 1fr);
 }
 
+.s-themes-education__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2.5rem;
+}
+
+.s-themes-education .m-list-item:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+.s-themes-education__image {
+  display: flex;
+  justify-content: center;
+}
+
+.s-themes-education__image img {
+  display: block;
+  max-width: 27.5rem;
+}
+
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -1510,6 +1550,14 @@ h6,
     padding: 0 0 1rem 0;
   }
 
+  .m-list-item__icon {
+    margin-right: 1rem;
+  }
+
+  .m-list-item__icon img {
+    max-width: 5rem;
+  }
+
   .footer__wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4.375rem;
@@ -1576,6 +1624,14 @@ h6,
 
   .s-intro-info__item-icon {
     margin-right: 1.5625rem;
+  }
+
+  .s-themes-education__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .s-themes-education .m-list-item:not(:last-child) {
+    margin-bottom: 2.5rem;
   }
 }
 
