@@ -1,0 +1,111 @@
+-
+  const programsItems = [
+    {
+      title: '1 блок. Теория введение, кроя брюк',
+      teacher: '',
+      durations: [
+        {
+          title: 'Объем',
+          text: '4 урока'
+        },
+        {
+          title: 'Продолжитнельность',
+          text: '30 минут'
+        }
+      ],
+      list: [
+        {
+          title: 'Урок 1',
+          text: 'Какая ткань будет использоваться',
+          image: '',
+        },
+        {
+          title: 'Урок 2',
+          text: 'Какие карманы  мы будем использовать',
+          image: '',
+        },
+        {
+          title: 'Урок 3',
+          text: 'Какую ткань выбрать для подкладки',
+          image: '',
+        }
+      ]
+    },
+    {
+      title: "2 блок.практика Снятие мерок на моделе",
+      durations: [
+        {
+          title: 'Объем',
+          text: '2 урока'
+        },
+        {
+          title: 'Продолжитнельность',
+          text: '1 час'
+        }
+      ],
+      list: [
+        {
+          title: 'Урок 1',
+          text: 'Снятие мерок на моделе',
+          image: '',
+        },
+        {
+          title: 'Урок 2',
+          text: 'Базовые конструкция мужских брюк',
+          image: '',
+        }
+      ]
+    },
+    {
+      title: "3 блок. Крой мужских брюк",
+      durations: [
+        {
+          title: 'Объем',
+          text: '5 уроков'
+        },
+        {
+          title: 'Продолжитнельность',
+          text: '2 часа'
+        }
+      ],
+      list: [
+        {
+          title: 'Урок 1',
+          text: 'Декатеровка ткани',
+          image: '',
+        },
+        {
+          title: 'Урок 2',
+          text: 'Раскладка на столе',
+          image: '',
+        },
+        {
+          title: 'Урок 3',
+          text: 'Крой мужских брюк со всеми подкрайными деталями (Подкладка,карманка и.т.д)',
+          image: '',
+        }
+      ]
+    },
+  ]
+
+
+section.section.s-program
+  .l-default
+    h2.section__title.a-font_h2 Программа курса:
+    each item in programsItems
+      .s-program__item
+        .s-program__item-content
+          .s-program__item-col
+            .s-program__item-title!= item.title
+          if item.teacher
+            .s-program__item-col
+              .s-program__item-title ПРЕПОДАВАТЕЛЬ
+        .s-program__item-durations
+          each row in item.durations
+            .s-program__item-duration
+              .s-program__item-duration__title!= row.title
+              .s-program__item-duration__text!= row.text
+        if item.list
+          .s-program__item-list
+            each card in item.list
+              +m_card(card.title, card.image, card.text)

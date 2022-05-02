@@ -1,12 +1,16 @@
 mixin m_card(name, image, text, date, link)
   .m-card
     .m-card__overlay
-    img.m-card__image(src!= image  alt="")
+    if image
+      img.m-card__image(src!= image  alt="")
+    else
+      img.m-card__image(src="./img/global/no-img.jpg"  alt="")
     .m-card__info
       .m-card__col
         .m-card__title.a-font_text-m!= name
         if date
           .m-card__date!= date
         .m-card__text!= text
-      .m-card__col
-        a.m-card__button.button.button--brown(href= href, title= link) Подробнее
+      if href
+        .m-card__col
+          a.m-card__button.button.button--brown(href= href, title= link) Подробнее
