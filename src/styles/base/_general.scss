@@ -112,6 +112,12 @@ body {
       border-color: $light-brown;
     }
   }
+
+  &--blue {
+    color: $light-brown;
+    border-color: $blue;
+    background-color: $blue;
+  }
 }
 
 ul {
@@ -282,6 +288,7 @@ h6 {
 
     &-xxl {
       font-size: rem(16);
+      font-weight: 700;
       line-height: 1.33;
 
       @media screen and (min-width: 576px) {

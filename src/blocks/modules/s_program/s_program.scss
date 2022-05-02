@@ -1,6 +1,26 @@
 .s-program {
+  &__teacher {
+    display: flex;
+    align-items: center;
+
+    &-photo {
+      margin-right: rem(24);
+      flex: none;
+
+      img {
+        width: rem(117);
+        height: rem(117);
+        border-radius: 100%;
+      }
+    }
+  }
+
   &__item {
-    margin-bottom: rem(100);
+    margin-bottom: rem(60);
+
+    @media (min-width: 992px) {
+      margin-bottom: rem(100);
+    }
 
     &-content {
       display: grid;
@@ -11,21 +31,49 @@
       @media (min-width: 992px) {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      ul {
+        margin-left: rem(15);
+        list-style: square;
+
+        li {
+          &::marker {
+            line-height: 1.4;
+            color: $light-brown;
+          }
+
+          &::before {
+            display: none;
+          }
+        }
+      }
     }
 
     &-title {
+      margin-bottom: rem(22);
       text-transform: uppercase;
+      color: $blue;
     }
 
     &-durations {
       display: flex;
       align-items: center;
-      margin-bottom: rem(40);
+      margin-bottom: rem(50);
       flex-wrap: wrap;
       grid-gap: rem(40);
     }
 
     &-duration {
+      &__title {
+        margin-bottom: rem(12);
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $blue;
+      }
+
+      &__text {
+        font-family: $primary_font;
+      }
     }
 
     &-list {
@@ -43,6 +91,17 @@
         grid-gap: rem(40);
         grid-template-columns: repeat(3, 1fr);
       }
+    }
+  }
+
+  &__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    button {
+      margin-bottom: rem(20);
     }
   }
 }

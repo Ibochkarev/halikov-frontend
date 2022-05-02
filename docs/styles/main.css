@@ -510,6 +510,13 @@ body {
   border-color: #d2b48c;
 }
 
+.button--blue,
+.btn--blue {
+  color: #d2b48c;
+  border-color: #23356b;
+  background-color: #23356b;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -617,6 +624,7 @@ h6,
 
 .a-font_text-xxl {
   font-size: 1rem;
+  font-weight: 700;
   line-height: 1.33;
 }
 
@@ -638,8 +646,8 @@ h6,
   height: 70px;
 }
 
-.ico-color-icon_pattern {
-  width: 4.37em;
+.ico-color-more {
+  width: 3.43em;
   height: 1em;
 }
 
@@ -1370,8 +1378,24 @@ h6,
   max-width: 27.5rem;
 }
 
+.s-program__teacher {
+  display: flex;
+  align-items: center;
+}
+
+.s-program__teacher-photo {
+  margin-right: 1.5rem;
+  flex: none;
+}
+
+.s-program__teacher-photo img {
+  width: 7.3125rem;
+  height: 7.3125rem;
+  border-radius: 100%;
+}
+
 .s-program__item {
-  margin-bottom: 6.25rem;
+  margin-bottom: 3.75rem;
 }
 
 .s-program__item-content {
@@ -1381,22 +1405,60 @@ h6,
   grid-gap: 2.5rem;
 }
 
+.s-program__item-content ul {
+  margin-left: 0.9375rem;
+  list-style: square;
+}
+
+.s-program__item-content ul li::marker {
+  line-height: 1.4;
+  color: #d2b48c;
+}
+
+.s-program__item-content ul li::before {
+  display: none;
+}
+
 .s-program__item-title {
+  margin-bottom: 1.375rem;
   text-transform: uppercase;
+  color: #23356b;
 }
 
 .s-program__item-durations {
   display: flex;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.125rem;
   flex-wrap: wrap;
   grid-gap: 2.5rem;
+}
+
+.s-program__item-duration__title {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #23356b;
+}
+
+.s-program__item-duration__text {
+  font-family: "Open Sans", sans-serif;
 }
 
 .s-program__item-list {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
+}
+
+.s-program__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.s-program__more button {
+  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 470px) {
@@ -1619,7 +1681,7 @@ h6,
   }
 
   .m-list-item__icon img {
-    max-width: 5rem;
+    max-width: 4rem;
   }
 
   .footer__wrapper {
@@ -1700,6 +1762,10 @@ h6,
 
   .s-themes-education .m-list-item:not(:last-child) {
     margin-bottom: 2.5rem;
+  }
+
+  .s-program__item {
+    margin-bottom: 6.25rem;
   }
 
   .s-program__item-content {
