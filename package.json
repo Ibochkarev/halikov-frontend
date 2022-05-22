@@ -1,5 +1,5 @@
 {
-  "name": "Webpack-gulp_frontend-builder",
+  "name": "Halikov - Frontend",
   "description": "Frontend development with pleasure",
   "author": "Dmitriy Bortsov",
   "repository": {
@@ -82,8 +82,10 @@
     "yargs": "^17.0.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.27",
     "require-yaml": "^0.0.1",
-    "script-loader": "^0.7.2"
+    "script-loader": "^0.7.2",
+    "swiper": "^8.1.5"
   },
   "husky": {
     "hooks": {
