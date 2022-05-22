@@ -1,0 +1,28 @@
+-
+  const galleryItems = [
+    {
+      image: './img/s-gallery/1.jpg',
+    },
+    {
+      image: './img/s-gallery/1.jpg',
+    },
+    {
+      image: './img/s-gallery/1.jpg',
+    },
+    {
+      image: './img/s-gallery/1.jpg',
+    },
+  ]
+
+section.s-gallery.section
+  .l-default
+    .l-section__wrapper
+      .s-gallery__wrapper
+        .s-gallery__slider
+          .swiper-wrapper
+            each item in galleryItems
+              .swiper-slide.s-gallery__slide
+                a.s-gallery__item(data-fancybox="gallery" data-src=item.image)
+                  img(src=item.image alt="")
+          .swiper-button-prev
+          .swiper-button-next
