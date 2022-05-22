@@ -1,0 +1,37 @@
+-
+  const whoItems = [
+    {
+      title: 'Начинающие портные',
+      text: 'Навык основам работы с брюками и созданию оригинальных брюк, используя современное лекало и технику'
+    },
+    {
+      title: 'Студенты ВУЗов',
+      text: 'Практика поможет найти будущий стиль ваших будущих работ. Разнообразие направлений'
+    },
+    {
+      title: 'Профессиональные портные',
+      text: 'Изучение авторской техники и внесения разнообразия в свой профессиональный стиль'
+    },
+    {
+      title: 'Ателье',
+      text: 'Практика поможет найти будущий стиль ваших будущих работ. Разнообразие направлений'
+    },
+    {
+      title: 'Любители',
+      text: 'Попробуйте для себя новое направление изготовления брюк'
+    },
+  ]
+
+section.s-who.section
+  .l-default
+    .l-section__wrapper
+      h2.section__title.a-font_h2 Для кого подходит курс:
+      .s-who__wrapper
+        each item in whoItems
+          .s-who__item
+            .s-who__item-image
+              img(src="./img/global/icon_pattern.svg" alt="")
+            .s-who__item-info
+              .s-who__item-title!= item.title
+              .s-who__item-text!= item.text
+      button.button.button--red(type="button" data-fancybox="" data-src="#popupOrder") Записаться на курс
