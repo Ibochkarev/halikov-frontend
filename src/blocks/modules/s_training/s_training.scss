@@ -1,0 +1,21 @@
+.s-training {
+  &__list {
+    margin-left: rem(15);
+    list-style: square;
+
+    @media (min-width: 786px) {
+      columns: 2;
+    }
+
+    li {
+      &::marker {
+        line-height: 1.4;
+        color: $light-brown;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

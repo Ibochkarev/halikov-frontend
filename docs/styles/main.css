@@ -3019,6 +3019,20 @@ h6,
   grid-template-columns: repeat(1, 1fr);
 }
 
+.s-training__list {
+  margin-left: 0.9375rem;
+  list-style: square;
+}
+
+.s-training__list li::marker {
+  line-height: 1.4;
+  color: #d2b48c;
+}
+
+.s-training__list li::before {
+  display: none;
+}
+
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -3263,6 +3277,12 @@ h6,
 
   .s-popup__course-cost {
     margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 786px) {
+  .s-training__list {
+    columns: 2;
   }
 }
 

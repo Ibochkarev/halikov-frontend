@@ -1,0 +1,32 @@
+-
+  const trainingItems = [
+    {
+      title: 'Применять в работе разные ткани'
+    },
+    {
+      title: 'Стильные невидимые передние карманы'
+    },
+    {
+      title: 'Стильные невидимые задние карманы'
+    },
+    {
+      title: 'Использовать опыт, как визитную карточку как портного',
+    },
+    {
+      title: 'Возможность применить опыт для домашнего или на произодстве',
+    },
+    {
+      title: 'Применять технику по своему творческому усмторению',
+    }
+  ]
+
+section.s-training.section
+  .l-default
+    .l-section__wrapper
+      h2.section__title.a-font_h2 во время обучения
+        br
+        |
+        | вы научитесь:
+      ul.s-training__list
+        each item in trainingItems
+          li!= item.title
