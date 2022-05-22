@@ -3013,6 +3013,12 @@ h6,
   text-transform: uppercase;
 }
 
+.s-included__wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -3041,6 +3047,11 @@ h6,
   }
 
   .s-program__item-list {
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .s-included__wrapper {
     grid-gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3518,6 +3529,12 @@ h6,
   }
 
   .s-program__item-list {
+    margin-bottom: 4.1875rem;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .s-included__wrapper {
     margin-bottom: 4.1875rem;
     grid-gap: 2.5rem;
     grid-template-columns: repeat(3, 1fr);

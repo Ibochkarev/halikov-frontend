@@ -1,0 +1,26 @@
+-
+  const includedItems = [
+    {
+      title: 'Название подкурса',
+      text: 'Краткое описание',
+      image: './img/s-program/offline/1-1.jpg',
+    },
+    {
+      title: 'Название подкурса',
+      text: 'Краткое описание',
+      image: './img/s-program/offline/1-2.jpg',
+    },
+    {
+      title: 'Название подкурса',
+      text: 'Краткое описание',
+      image: './img/s-program/offline/1-3.jpg',
+    }
+  ]
+
+section.s-included.section
+  .l-default
+    .l-section__wrapper
+      h2.section__title.a-font_h2 Что входит в курс
+      .s-included__wrapper
+        each item in includedItems
+          +m_card(item.title, item.image, item.text)
