@@ -1,0 +1,29 @@
+mixin form(title, btnText='Отправить заявку', variantInputs)
+  form.form-def(action="")
+    if title
+      p.form-def__title.a-font_h4!= title
+
+    .form-def__inner
+      if variantInputs == 'full'
+        each placeholder, name in {"name": "Имя", "email": "Почта", "phone": "Телефон*", "promocode": "Промокод"}
+          +formInput("text", name, placeholder)
+      else
+        each placeholder, name in {"name": "Имя", "phone": "Телефон"}
+          +formInput("text", name, placeholder)
+      if block
+        block
+
+      label.form-def__privacy
+        input.form-def__privacy-checkbox(type="checkbox")
+        span.form-def__privacy-ico
+          +svgMono("check")
+        span.form-def__privacy-text
+          a(href='#', target='_blank') Даю согласие на обработку данных
+
+      span.form-def__field.form-def__field_btn
+        button.form-def__button.a-button(type='submit')
+          span!= btnText
+
+mixin formInput(type="text", name, placeholder, classname, value, attributes, options, option_other=false, label)
+  label.form-def__field(class=classname)
+    input.form-def__input(type=type, name=name, placeholder=placeholder, value=value)&attributes(attributes)

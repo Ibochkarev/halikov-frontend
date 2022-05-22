@@ -671,6 +671,12 @@ h6,
   height: 1em;
 }
 
+.ico-mono-check {
+  width: 1.2em;
+  height: 1em;
+  fill: #fff;
+}
+
 .ico-mono-telegram {
   width: 1.14em;
   height: 1em;
@@ -963,6 +969,142 @@ h6,
 .m-list-item__title {
   font-weight: 700;
   color: #23356b;
+}
+
+.form-def {
+  height: fit-content;
+  padding: 1.25rem 0.9375rem;
+  background-color: #23356b;
+}
+
+.form-def__title {
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.form-def__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-def__field {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 1.25rem;
+}
+
+.form-def__field_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-def__input {
+  display: block;
+  width: 100%;
+  min-height: 3rem;
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  text-transform: none;
+  border: 0.0625rem solid #fffcfc;
+  transition: 0.2s;
+}
+
+.form-def__input:focus {
+  border-color: #a8abc1;
+  outline: none;
+}
+
+.form-def__input.error,
+.form-def__input.error:focus {
+  border-color: #fe334a;
+}
+
+.form-def__input::placeholder {
+  color: #737373;
+}
+
+.form-def__button {
+  cursor: pointer;
+  width: 100%;
+  height: 3rem;
+  max-width: max-content;
+  border: none;
+  transition: 0.2s;
+}
+
+.form-def__button .a-button__label {
+  white-space: nowrap;
+}
+
+.form-def__button:hover {
+  opacity: 0.8;
+}
+
+.form-def__privacy {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.form-def__privacy-checkbox,
+.form-def__privacy-ico {
+  width: 1rem;
+  height: 1rem;
+}
+
+.form-def__privacy-checkbox {
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  opacity: 0;
+}
+
+.form-def__privacy-ico {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem 0.5rem 0 0;
+  border: 0.0625rem solid #a8abc1;
+  border-radius: 0.125rem;
+  flex: none;
+  background-color: #fff;
+}
+
+.form-def__privacy-ico svg {
+  width: 0.75rem;
+  opacity: 0;
+}
+
+.form-def__privacy-checkbox:checked ~ .form-def__privacy-ico {
+  border-color: #a8abc1;
+  background-color: #a8abc1;
+}
+
+.form-def__privacy-checkbox:checked ~ .form-def__privacy-ico svg {
+  opacity: 1;
+}
+
+.form-def__privacy-text {
+  display: block;
+  color: #fff;
+}
+
+.form-def__privacy-text a {
+  cursor: pointer;
+  color: #fff;
 }
 
 .footer {
@@ -1535,28 +1677,35 @@ h6,
   overflow: hidden;
   cursor: help;
   position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #cccccc;
-  border-image: initial;
+  margin-bottom: 1.5625rem;
+}
+
+.s-contacts__map iframe {
+  border: 0;
 }
 
 .s-contacts__map .mapTitle {
   z-index: 1000;
   position: absolute;
   display: none;
-  padding: 5px 20px;
+  padding: 0.3125rem 1.25rem;
   background: white;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
-  border-width: 1px;
+  border-radius: 0.3125rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 0.3125rem;
+  border-width: 0.0625rem;
   border-style: solid;
   border-color: #cccccc;
   border-image: initial;
 }
 
 .s-contacts__form {
+  display: flex;
+  justify-content: center;
   flex-basis: 100%;
+}
+
+.s-contacts__form .form-def {
+  max-width: 35rem;
 }
 
 @media (min-width: 470px) {
@@ -1572,6 +1721,10 @@ h6,
 }
 
 @media (min-width: 575px) {
+  .form-def__button {
+    max-width: 17.5rem;
+  }
+
   .s-teams__wrapper {
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -1782,6 +1935,18 @@ h6,
     max-width: 4rem;
   }
 
+  .form-def {
+    padding: 1.5625rem 3.125rem 4.375rem;
+  }
+
+  .form-def__title {
+    margin-bottom: 2.5rem;
+  }
+
+  .form-def__button {
+    max-width: unset;
+  }
+
   .footer__wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4.375rem;
@@ -1889,6 +2054,10 @@ h6,
 
   .s-contacts__item-icon {
     margin-right: 1.5625rem;
+  }
+
+  .s-contacts__map {
+    margin-bottom: 0;
   }
 
   .s-contacts__form {

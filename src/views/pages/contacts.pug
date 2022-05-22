@@ -33,7 +33,8 @@ block content
           #wrapMap.s-contacts__map
             iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A2865f51be7607ce1f205ad7116713dad0bab1556b36deeb9e5a1fdd77b9b7d3d&source=constructor', width='100%', height='400',  style="pointer-events: none;", frameborder='0')
 
-        .s-contacts__form 2
+        .s-contacts__form
+          +form('Связаться с нами', 'Отправить заявку', 'full')
 block scripts
   script(defer src="./js/vendor.js")
   script(defer src="./js/main.js")

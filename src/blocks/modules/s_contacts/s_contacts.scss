@@ -74,20 +74,25 @@
     overflow: hidden;
     cursor: help;
     position: relative;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(204, 204, 204);
-    border-image: initial;
+    margin-bottom: rem(25);
+
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+    }
+
+    iframe {
+      border: 0;
+    }
 
     .mapTitle {
       z-index: 1000;
       position: absolute;
       display: none;
-      padding: 5px 20px;
+      padding: rem(5) rem(20);
       background: rgb(255, 255, 255);
-      border-radius: 5px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
-      border-width: 1px;
+      border-radius: rem(5);
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 rem(5);
+      border-width: rem(1);
       border-style: solid;
       border-color: rgb(204, 204, 204);
       border-image: initial;
@@ -95,10 +100,16 @@
   }
 
   &__form {
+    display: flex;
+    justify-content: center;
     flex-basis: 100%;
 
     @media (min-width: 992px) {
       flex-basis: 40%;
+    }
+
+    .form-def {
+      max-width: rem(560);
     }
   }
 }

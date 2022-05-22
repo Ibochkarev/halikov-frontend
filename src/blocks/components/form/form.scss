@@ -1,0 +1,149 @@
+.form-def {
+  height: fit-content;
+  padding: rem(20) rem(15);
+  background-color: $blue;
+
+  @media (min-width: 992px) {
+    padding: rem(25) rem(50) rem(70);
+  }
+
+  &__title {
+    margin-bottom: rem(20);
+    font-weight: 400;
+    color: $white;
+
+    @media (min-width: 992px) {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__field {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: rem(20);
+
+    &_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    min-height: rem(48);
+    margin: 0;
+    padding: rem(12);
+    font-size: rem(14);
+    line-height: 1.25;
+    text-transform: none;
+    border: rem(1) solid $bg-grey;
+    transition: 0.2s;
+
+    &:focus {
+      border-color: $grey-700;
+      outline: none;
+    }
+
+    &.error,
+    &.error:focus {
+      border-color: $red;
+    }
+
+    &::placeholder {
+      color: $grey;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    width: 100%;
+    height: rem(48);
+    max-width: max-content;
+    border: none;
+    transition: 0.2s;
+
+    @media (min-width: 575px) {
+      max-width: rem(280);
+    }
+
+    @media (min-width: 992px) {
+      max-width: unset;
+    }
+
+    .a-button__label {
+      white-space: nowrap;
+    }
+  }
+  &__button:hover {
+    opacity: 0.8;
+  }
+
+  &__privacy {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: rem(40);
+
+    &-checkbox,
+    &-ico {
+      width: rem(16);
+      height: rem(16);
+    }
+
+    &-checkbox {
+      z-index: 1;
+      cursor: pointer;
+      position: absolute;
+      display: block;
+      opacity: 0;
+    }
+
+    &-ico {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: rem(4) rem(8) 0 0;
+      border: rem(1) solid $grey-700;
+      border-radius: rem(2);
+      flex: none;
+      background-color: $white;
+
+      svg {
+        width: rem(12);
+        opacity: 0;
+      }
+    }
+    &-checkbox:checked ~ &-ico {
+      border-color: $grey-700;
+      background-color: $grey-700;
+
+      svg {
+        opacity: 1;
+      }
+    }
+
+    &-text {
+      display: block;
+      color: $white;
+
+      a {
+        cursor: pointer;
+        color: $white;
+      }
+    }
+  }
+}
