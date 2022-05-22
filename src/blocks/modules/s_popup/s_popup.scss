@@ -1,0 +1,49 @@
+.s-popup {
+  display: none;
+  width: 100%;
+  max-width: rem(576);
+  padding: 0;
+  background-color: transparent;
+
+  .is-close {
+    top: rem(15) !important;
+    right: rem(15) !important;
+  }
+
+  &__form {
+    padding-top: rem(30);
+    background-color: $blue;
+  }
+
+  &__thanks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: rem(160);
+    padding-bottom: rem(160);
+    text-align: center;
+    color: $white;
+    background-color: $blue;
+
+    svg {
+      width: rem(110);
+      height: auto;
+      margin-bottom: rem(45);
+    }
+
+    &-title {
+      margin-bottom: rem(30);
+      font-size: rem(32);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      max-width: rem(279);
+      margin: 0 auto;
+      font-family: $primary_font;
+      font-size: rem(20);
+      line-height: 1.34;
+    }
+  }
+}

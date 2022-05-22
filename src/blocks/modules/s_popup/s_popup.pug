@@ -1,0 +1,20 @@
+.s-popup#popupThanks
+  .s-popup__thanks
+    .s-popup__thanks-info
+      +svgColor("thanks")
+      .s-popup__thanks-title Спасибо!
+      .s-popup__thanks-text Ваша заявка отправлена. Мы вам перезвоним.
+
+.s-popup#popupActions
+  .s-popup__form
+    +form('Участие в акции', 'Отправить заявку', 'full')
+
+.s-popup#popupOrder
+  .s-popup__form
+    +form('Записаться на курс', 'Записаться', 'full')
+
+.s-popup#popupCall
+  .s-popup__form
+    +form('Заказать обратный звонок', 'Перезвоните мне', '')
+
+//- data-fancybox="" data-src="#popupCall"
