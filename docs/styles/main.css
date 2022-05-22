@@ -2907,8 +2907,8 @@ h6,
 
 .s-popup__action-wrapper {
   display: grid;
-  grid-gap: 1.5625rem;
   align-items: center;
+  grid-gap: 1.5625rem;
   grid-template-columns: repeat(1, 1fr);
 }
 
@@ -2924,6 +2924,93 @@ h6,
 
 .s-popup__action-text {
   margin-bottom: 1.25rem;
+}
+
+.s-popup__course {
+  padding: 1.25rem 0.9375rem;
+  color: #fff;
+}
+
+.s-popup__course-wrapper {
+  display: grid;
+  grid-gap: 1.5625rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.s-popup__course-title {
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  line-height: 1.34;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.s-popup__course-title span {
+  color: #d2b48c;
+}
+
+.s-popup__course-text {
+  margin-bottom: 1.25rem;
+}
+
+.s-popup__course-teacher {
+  margin-bottom: 1.25rem;
+}
+
+.s-popup__course-teacher__title {
+  margin-bottom: 0.625rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.s-popup__course-teacher__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.s-popup__course-teacher__img {
+  margin-right: 0.9375rem;
+  flex: none;
+}
+
+.s-popup__course-teacher__img img {
+  width: 5rem;
+  height: auto;
+  border-radius: 100%;
+}
+
+.s-popup__course-teacher__name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.s-popup__course-data {
+  display: grid;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  grid-gap: 1.875rem 3.75rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.s-popup__course-data__title {
+  margin-bottom: 0.3125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.s-popup__course-data__text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.s-popup__course-data__text span {
+  font-weight: 700;
+}
+
+.s-popup__course-cost {
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
 }
 
 @media (min-width: 470px) {
@@ -3141,6 +3228,31 @@ h6,
   .s-popup__action-text {
     margin-bottom: 2.5rem;
   }
+
+  .s-popup__course-title {
+    margin-bottom: 1.5625rem;
+    line-height: 1.43;
+  }
+
+  .s-popup__course-text {
+    margin-bottom: 2.5rem;
+  }
+
+  .s-popup__course-teacher {
+    margin-bottom: 2.5rem;
+  }
+
+  .s-popup__course-data {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .s-popup__course-data {
+    margin-bottom: 2.5rem;
+  }
+
+  .s-popup__course-cost {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -3309,6 +3421,14 @@ h6,
   }
 
   .s-popup__action-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .s-popup__course {
+    padding: 3rem 3.75rem;
+  }
+
+  .s-popup__course-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
