@@ -2847,17 +2847,20 @@ h6,
   width: 100%;
   max-width: 36rem;
   padding: 0;
-  background-color: transparent;
+  background-color: #23356b;
 }
 
-.s-popup .is-close {
-  top: 0.9375rem !important;
-  right: 0.9375rem !important;
+.s-popup--full {
+  max-width: 75rem;
 }
 
 .s-popup__form {
   padding-top: 1.875rem;
-  background-color: #23356b;
+}
+
+.s-popup__form .is-close {
+  top: 0.9375rem !important;
+  right: 0.9375rem !important;
 }
 
 .s-popup__thanks {
@@ -2869,6 +2872,11 @@ h6,
   text-align: center;
   color: #fff;
   background-color: #23356b;
+}
+
+.s-popup__thanks .is-close {
+  top: 0.9375rem !important;
+  right: 0.9375rem !important;
 }
 
 .s-popup__thanks svg {
@@ -2890,6 +2898,32 @@ h6,
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 1.34;
+}
+
+.s-popup__action {
+  padding: 1.25rem 0.9375rem;
+  color: #fff;
+}
+
+.s-popup__action-wrapper {
+  display: grid;
+  grid-gap: 1.5625rem;
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.s-popup__action-title {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  line-height: 1.34;
+}
+
+.s-popup__action-title span {
+  color: #d2b48c;
+}
+
+.s-popup__action-text {
+  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 470px) {
@@ -3098,6 +3132,15 @@ h6,
   .swiper-button-next {
     right: 30%;
   }
+
+  .s-popup__action-title {
+    margin-bottom: 2.5rem;
+    line-height: 1.43;
+  }
+
+  .s-popup__action-text {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -3254,6 +3297,19 @@ h6,
 
   .s-contacts__form {
     flex-basis: 40%;
+  }
+
+  .s-popup-action .is-close {
+    top: 0.9375rem !important;
+    right: 0.9375rem !important;
+  }
+
+  .s-popup__action {
+    padding: 3rem 3.75rem;
+  }
+
+  .s-popup__action-wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
