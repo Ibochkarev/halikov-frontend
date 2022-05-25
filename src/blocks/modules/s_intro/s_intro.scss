@@ -1,4 +1,10 @@
 .s-intro {
+  position: relative;
+
+  @media (min-width: 768px) {
+    margin-top: rem(-300);
+  }
+
   &--offline {
     text-align: center;
   }

@@ -2562,6 +2562,10 @@ h6,
   text-transform: uppercase;
 }
 
+.s-intro {
+  position: relative;
+}
+
 .s-intro--offline {
   text-align: center;
 }
@@ -3175,6 +3179,16 @@ h6,
   line-height: 1.4;
 }
 
+.s-video-intro {
+  height: 21.875rem;
+}
+
+.s-video-intro video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -3331,6 +3345,10 @@ h6,
     padding: 0.9375rem 2.5rem;
   }
 
+  .s-intro {
+    margin-top: -18.75rem;
+  }
+
   .s-intro__inner {
     padding: 2.5rem;
   }
@@ -3432,6 +3450,10 @@ h6,
 
   .s-who__item-image img {
     max-width: 5.1875rem;
+  }
+
+  .s-video-intro {
+    height: 41.375rem;
   }
 }
 
