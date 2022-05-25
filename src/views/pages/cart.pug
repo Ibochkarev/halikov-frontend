@@ -1,0 +1,14 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Корзина"
+
+block content
+  .l-default
+    +breadcrumb(['Главная'], 'Корзина')
+  include ../../../src/blocks/modules/s_cart/s_cart.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

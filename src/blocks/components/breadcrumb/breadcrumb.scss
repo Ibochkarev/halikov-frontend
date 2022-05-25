@@ -1,4 +1,10 @@
 .breadcrumb {
+  margin-top: rem(15);
+
+  @media (min-width: 992px) {
+    margin-top: rem(30);
+  }
+
   &__list {
     list-style: none;
   }

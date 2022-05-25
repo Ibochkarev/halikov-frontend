@@ -1,0 +1,223 @@
+.s-cart {
+  &__wrapper {
+    display: grid;
+    margin-bottom: rem(30);
+    grid-gap: rem(16);
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 768px) {
+      grid-gap: rem(24);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__products {
+    margin-bottom: rem(80);
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: rem(30);
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      margin-bottom: rem(15);
+      gap: rem(15);
+    }
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+      gap: rem(15);
+    }
+
+    &-photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(75);
+      min-height: rem(75);
+      padding: rem(5);
+      border: rem(1) solid #e6e6e6;
+      flex: none;
+
+      @media (min-width: 992px) {
+        width: rem(116);
+        height: rem(116);
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-title {
+      margin-bottom: rem(10);
+      font-family: $primary_font;
+      font-weight: 600;
+    }
+
+    &-price {
+      margin-bottom: rem(10);
+      font-family: $primary_font;
+      font-size: rem(16);
+    }
+
+    &-btn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 0;
+      background-color: transparent;
+
+      svg {
+        margin-right: rem(10);
+      }
+    }
+
+    &-quantity {
+      display: flex;
+      align-items: center;
+      width: 50%;
+
+      &__btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(25);
+        height: rem(25);
+        font-size: rem(14);
+        font-weight: 700;
+        color: $white;
+        background-color: $blue;
+
+        @media (min-width: 992px) {
+          width: rem(43);
+          height: rem(41);
+          font-size: rem(18);
+        }
+      }
+
+      input {
+        cursor: pointer;
+        width: rem(40);
+        height: rem(25);
+        min-width: rem(23);
+        font-size: rem(14);
+        text-align: center;
+        border: rem(1) solid #c4c4c4;
+
+        @media (min-width: 992px) {
+          width: rem(60);
+          height: rem(41);
+          font-size: rem(18);
+        }
+      }
+    }
+
+    &-cost {
+      width: 50%;
+      font-weight: 700;
+      text-align: right;
+      color: $blue;
+    }
+  }
+
+  &__info {
+    &-title {
+      margin-bottom: rem(20);
+      font-size: rem(24);
+      font-weight: 700;
+      color: $blue;
+
+      @media (min-width: 992px) {
+        margin-bottom: rem(40);
+      }
+    }
+
+    &-fields {
+      display: flex;
+      margin-bottom: rem(40);
+      flex-direction: column;
+    }
+
+    &-field {
+      margin-bottom: rem(12);
+    }
+
+    label {
+      &:not(:last-child) {
+        margin-bottom: rem(10);
+
+        @media (min-width: 992px) {
+          margin-bottom: rem(20);
+        }
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: rem(40);
+    padding-right: rem(10);
+    padding-left: rem(10);
+    border: rem(1) solid #e6e6e6;
+
+    @media (min-width: 992px) {
+      height: rem(60);
+      padding-right: rem(15);
+      padding-left: rem(15);
+    }
+  }
+  ._fixed {
+    position: sticky;
+    top: rem(30);
+  }
+
+  &-total {
+    margin-bottom: rem(50);
+    padding: rem(15);
+    background: #f7f7f7;
+
+    @media (min-width: 992px) {
+      padding: rem(45) rem(35);
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: rem(18);
+
+      &:not(:last-child) {
+        margin-bottom: rem(17);
+      }
+
+      &-title {
+        font-family: $primary_font;
+      }
+
+      &-value {
+        font-weight: 700;
+      }
+    }
+
+    &__amount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: rem(40);
+      padding-top: rem(20);
+      font-size: rem(24);
+      font-weight: 700;
+      color: $blue;
+      border-top: rem(1) solid $light-brown;
+    }
+  }
+}

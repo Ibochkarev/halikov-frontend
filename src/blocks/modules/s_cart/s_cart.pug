@@ -1,0 +1,95 @@
+section.section.s-cart
+  .l-default
+    h1.page__title.a-font_h1= title
+    .s-cart__wrapper
+      .s-cart__col
+        .s-cart__products
+          .s-cart__item
+            .s-cart__item-top
+              .s-cart__item-photo
+                img(src="./img/s-cart/1.jpg", alt="")
+              .s-cart__item-info
+                .s-cart__item-title Пояс
+                .s-cart__item-price
+                  span 1000
+                  |
+                  |₽ за погонный метр
+                button.s-cart__item-btn(type="button")
+                  +svgMono("remove")
+                  span Удалить
+            .s-cart__item-bottom
+              .s-cart__item-quantity
+                .s-cart__item-quantity__btn.s-cart__item-minus
+                  span —
+                input#count.s-cart__item-quantity__input(type="text", name="count" min="0" value="" placeholder="1")
+                .s-cart__item-quantity__btn.s-cart__item-plus
+                  span +
+              .s-cart__item-cost
+                span 1000
+                |
+                |₽
+          .s-cart__item
+            .s-cart__item-top
+              .s-cart__item-photo
+                img(src="./img/s-cart/2.jpg", alt="")
+              .s-cart__item-info
+                .s-cart__item-title Наперсток
+                .s-cart__item-price
+                  span 1000
+                  |
+                  |₽ за погонный метр
+                button.s-cart__item-btn(type="button")
+                  +svgMono("remove")
+                  span Удалить
+            .s-cart__item-bottom
+              .s-cart__item-quantity
+                .s-cart__item-quantity__btn.s-cart__item-minus
+                  span —
+                input#count.s-cart__item-quantity__input(type="text", name="count" min="0" value="" placeholder="1")
+                .s-cart__item-quantity__btn.s-cart__item-plus
+                  span +
+              .s-cart__item-cost
+                span 1000
+                |
+                |₽
+        .s-cart__info
+          .s-cart__info-title Данные получателя:
+          .s-cart__info-fields
+            label(for="")
+              input.s-cart__input(type="text" placeholder="Имя*")
+            label(for="")
+              input.s-cart__input(type="text" placeholder="Email")
+            label(for="")
+              input.s-cart__input(type="text" placeholder="Телефон*")
+            label(for="")
+              input.s-cart__input(type="text" placeholder="Промокод")
+          .s-cart__info-title Способ оплаты:
+          .s-cart__info-fields
+            .s-cart__info-field
+              input#1(type="radio", name="", checked)
+              label(for="1") Банковской картой
+          .s-cart__info-title Доставка:
+          .s-cart__info-fields
+            .s-cart__info-field
+              input#delivery_1(type="radio", name="delivery", checked)
+              label(for="delivery_1") Самовывоз по адресу Москва, Чистопрудный бульвар, д. 15, стр. 2.
+            .s-cart__info-field
+              input#delivery_2(type="radio", name="delivery")
+              label(for="delivery_2") Курьером по Москве (400 руб.)
+            .s-cart__info-field
+              input#delivery_3(type="radio", name="delivery")
+              label(for="delivery_3") СДЭК по России
+      .s-cart__col
+        ._fixed
+          .s-cart-total
+            .s-cart-total__item
+              .s-cart-total__item-title Стоимость заказа
+              .s-cart-total__item-value 3000 ₽
+            .s-cart-total__item
+              .s-cart-total__item-title Доставка
+              .s-cart-total__item-value 199 ₽
+            .s-cart-total__amount
+              .s-cart-total__amount-title Итого к оплате:
+              .s-cart-total__amount-value 3199 ₽
+
+          button.button.button--red(type="button") Оформить заказ

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Корзина</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="l-default">
+        <div class="header__wrapper"><a class="header__logo" href=""><img src="./img/global/logo.svg" alt=""></a>
+          <div class="header__info">
+            <div class="header__top"><a class="header__phone" href="tel:+78008969623">+7 800 896 96 23</a><a class="header__call-btn" href="" data-fancybox="" data-src="#popupCall">Обратный звонок</a>
+              <div class="header__langs"><span class="header__langs-item _active" href="">ru</span>
+                <div class="header__langs-line"></div><a class="header__langs-item" href="">eng</a>
+              </div>
+            </div>
+            <div class="header__bottom">
+              <nav class="header__menu">
+                <li class="header__menu-item"><a class="header__menu-link" href="">Об Академии</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="">Курсы</a>
+                  <ul>
+                    <li><a href="#">Название курса</a></li>
+                    <li><a href="#">Название курса</a></li>
+                    <li><a href="#">Название курса</a></li>
+                    <li><a href="#">Название курса</a></li>
+                  </ul>
+                </li>
+                <li class="header__menu-item"><a class="header__menu-link" href="">Bespoke Store</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="">Bespoke Offline</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="">Контакты</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="">Контакты</a></li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="l-default">
+        <div class="breadcrumb">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><span class="breadcrumb__link">Главная</span>
+            </li>
+            <li class="breadcrumb__item"><span class="breadcrumb__link-current">Корзина</span></li>
+          </ul>
+        </div>
+      </div>
+      <section class="section s-cart">
+        <div class="l-default">
+          <h1 class="page__title a-font_h1">Корзина</h1>
+          <div class="s-cart__wrapper">
+            <div class="s-cart__col">
+              <div class="s-cart__products">
+                <div class="s-cart__item">
+                  <div class="s-cart__item-top">
+                    <div class="s-cart__item-photo"><img src="./img/s-cart/1.jpg" alt=""></div>
+                    <div class="s-cart__item-info">
+                      <div class="s-cart__item-title">Пояс</div>
+                      <div class="s-cart__item-price"><span>1000</span>
+                        ₽ за погонный метр
+                      </div>
+                      <button class="s-cart__item-btn" type="button">
+                        <svg class="ico ico-mono-remove">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-remove"></use>
+                        </svg><span>Удалить</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="s-cart__item-bottom">
+                    <div class="s-cart__item-quantity">
+                      <div class="s-cart__item-quantity__btn s-cart__item-minus"><span>—</span></div>
+                      <input class="s-cart__item-quantity__input" id="count" type="text" name="count" min="0" value="" placeholder="1">
+                      <div class="s-cart__item-quantity__btn s-cart__item-plus"><span>+</span></div>
+                    </div>
+                    <div class="s-cart__item-cost"><span>1000</span>
+                      ₽
+                    </div>
+                  </div>
+                </div>
+                <div class="s-cart__item">
+                  <div class="s-cart__item-top">
+                    <div class="s-cart__item-photo"><img src="./img/s-cart/2.jpg" alt=""></div>
+                    <div class="s-cart__item-info">
+                      <div class="s-cart__item-title">Наперсток</div>
+                      <div class="s-cart__item-price"><span>1000</span>
+                        ₽ за погонный метр
+                      </div>
+                      <button class="s-cart__item-btn" type="button">
+                        <svg class="ico ico-mono-remove">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-remove"></use>
+                        </svg><span>Удалить</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="s-cart__item-bottom">
+                    <div class="s-cart__item-quantity">
+                      <div class="s-cart__item-quantity__btn s-cart__item-minus"><span>—</span></div>
+                      <input class="s-cart__item-quantity__input" id="count" type="text" name="count" min="0" value="" placeholder="1">
+                      <div class="s-cart__item-quantity__btn s-cart__item-plus"><span>+</span></div>
+                    </div>
+                    <div class="s-cart__item-cost"><span>1000</span>
+                      ₽
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-cart__info">
+                <div class="s-cart__info-title">Данные получателя:</div>
+                <div class="s-cart__info-fields">
+                  <label for="">
+                    <input class="s-cart__input" type="text" placeholder="Имя*">
+                  </label>
+                  <label for="">
+                    <input class="s-cart__input" type="text" placeholder="Email">
+                  </label>
+                  <label for="">
+                    <input class="s-cart__input" type="text" placeholder="Телефон*">
+                  </label>
+                  <label for="">
+                    <input class="s-cart__input" type="text" placeholder="Промокод">
+                  </label>
+                </div>
+                <div class="s-cart__info-title">Способ оплаты:</div>
+                <div class="s-cart__info-fields">
+                  <div class="s-cart__info-field">
+                    <input id="1" type="radio" name="" checked>
+                    <label for="1">Банковской картой</label>
+                  </div>
+                </div>
+                <div class="s-cart__info-title">Доставка:</div>
+                <div class="s-cart__info-fields">
+                  <div class="s-cart__info-field">
+                    <input id="delivery_1" type="radio" name="delivery" checked>
+                    <label for="delivery_1">Самовывоз по адресу Москва, Чистопрудный бульвар, д. 15, стр. 2.</label>
+                  </div>
+                  <div class="s-cart__info-field">
+                    <input id="delivery_2" type="radio" name="delivery">
+                    <label for="delivery_2">Курьером по Москве (400 руб.)</label>
+                  </div>
+                  <div class="s-cart__info-field">
+                    <input id="delivery_3" type="radio" name="delivery">
+                    <label for="delivery_3">СДЭК по России</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-cart__col">
+              <div class="_fixed">
+                <div class="s-cart-total">
+                  <div class="s-cart-total__item">
+                    <div class="s-cart-total__item-title">Стоимость заказа</div>
+                    <div class="s-cart-total__item-value">3000 ₽</div>
+                  </div>
+                  <div class="s-cart-total__item">
+                    <div class="s-cart-total__item-title">Доставка</div>
+                    <div class="s-cart-total__item-value">199 ₽</div>
+                  </div>
+                  <div class="s-cart-total__amount">
+                    <div class="s-cart-total__amount-title">Итого к оплате:</div>
+                    <div class="s-cart-total__amount-value">3199 ₽</div>
+                  </div>
+                </div>
+                <button class="button button--red" type="button">Оформить заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="l-default">
+          <div class="footer__wrapper">
+            <div class="footer__logo"><img src="./img/s-footer/logo.png" alt="" loading="lazy"></div>
+            <div class="footer__col">
+              <nav class="footer__nav"><a class="footer__nav-item" href="/bespoke-academy.html">Об Академии</a><a class="footer__nav-item" href="#">Курсы</a><a class="footer__nav-item" href="#">Bespoke Store</a><a class="footer__nav-item" href="/academy-offline.html">Bespoke offline</a><a class="footer__nav-item" href="/blog.html">Блог</a><a class="footer__nav-item" href="/contacts.html">Контакты</a>
+              </nav>
+            </div>
+            <div class="footer__col"><a class="footer__phone" href="tel:+78008969623">+7 800 896 96 23</a>
+              <div class="footer__address">г. Москва, ул. Чистопрудный Бульвар 15/1</div>
+            </div>
+            <div class="footer__col"><a class="footer__link a-font_text" href="mailto:hello@bespokeacademy.com">hello@bespokeacademy.com</a>
+              <div class="footer__socials"><a class="footer__socials-item" href="#" target="_blank">
+                  <svg class="ico ico-mono-whatsapp">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-whatsapp"></use>
+                  </svg></a><a class="footer__socials-item" href="#" target="_blank">
+                  <svg class="ico ico-mono-telegram">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-telegram"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="s-popup" id="popupThanks">
+        <div class="s-popup__thanks">
+          <div class="s-popup__thanks-info">
+            <svg class="ico ico-color-thanks">
+              <use xlink:href="img/sprite-color.svg#ico-color-thanks"></use>
+            </svg>
+            <div class="s-popup__thanks-title">Спасибо!</div>
+            <div class="s-popup__thanks-text">Ваша заявка отправлена. Мы вам перезвоним.</div>
+          </div>
+        </div>
+      </div>
+      <div class="s-popup s-popup-action s-popup--full" id="popupInfoAction">
+        <div class="s-popup__action">
+          <div class="s-popup__action-wrapper">
+            <div class="s-popup__action-col">
+              <div class="s-popup__action-title a-font_h4"><span>10% скидка</span>
+                на материалы при предъявлении промокода «BESPOKE»
+              </div>
+              <div class="s-popup__action-text">
+                <p>Вы научитесь шить быстрым способом брюки, за 1 день, невидимые карманы, невидимые швы, стильный крой. Быстрая сдача работы.</p>
+                <p>Лекало в комплекте</p>
+              </div><a class="button button--brown" href="#" data-fancybox="" data-src="#popupActions">Участвовать в акции</a>
+            </div>
+            <div class="s-popup__action-col"><img src="./img/s-popup/action.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="s-popup s-popup-course s-popup--full" id="popupCourse">
+        <div class="s-popup__course">
+          <div class="s-popup__course-title a-font_h5">Курс по пошиву карманов брюк</div>
+          <div class="s-popup__course-wrapper">
+            <div class="s-popup__course-col">
+              <div class="s-popup__course-text">
+                <p>Вы научитесь шить быстрым способом брюки, за 1 день, невидимые карманы, невидимые швы, стильный крой. Быстрая сдача работы.</p>
+                <p>Лекало в комплекте</p>
+              </div>
+              <div class="s-popup__course-teacher">
+                <div class="s-popup__course-teacher__title">Преподаватель</div>
+                <div class="s-popup__course-teacher__wrap">
+                  <div class="s-popup__course-teacher__img"><img src="./img/s-popup/photo.jpg" alt=""></div>
+                  <div class="s-popup__course-teacher__name">Рамиль<br> Халиков</div>
+                </div>
+              </div>
+              <div class="s-popup__course-data">
+                <div class="s-popup__course-data__item">
+                  <div class="s-popup__course-data__title">Доступ</div>
+                  <div class="s-popup__course-data__text">2 месяца</div>
+                </div>
+                <div class="s-popup__course-data__item">
+                  <div class="s-popup__course-data__title">Объем</div>
+                  <div class="s-popup__course-data__text">14 блока</div>
+                </div>
+                <div class="s-popup__course-data__item">
+                  <div class="s-popup__course-data__title">Результат</div>
+                  <div class="s-popup__course-data__text">
+                    1 итоговая работа
+                    <span>«Брюки»</span>
+                  </div>
+                </div>
+                <div class="s-popup__course-data__item">
+                  <div class="s-popup__course-data__title">Список материалов</div>
+                  <div class="s-popup__course-data__text">Включен: ткани, лекало, линейки, ножницы</div>
+                </div>
+              </div>
+              <div class="s-popup__course-cost">
+                Стоимость:
+                <span>10 000</span>
+                
+                ₽
+              </div><a class="button button--brown" href="#" data-fancybox="" data-src="#popupOrder">Записаться на курс</a>
+            </div>
+            <div class="s-popup__course-col"><img src="./img/s-popup/course.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="s-popup" id="popupActions">
+        <div class="s-popup__form">
+          <form class="form-def" action="">
+            <p class="form-def__title a-font_h4">Участие в акции</p>
+            <div class="form-def__inner">
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="name" placeholder="Имя"/>
+              </label>
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="email" placeholder="Почта"/>
+              </label>
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="phone" placeholder="Телефон*"/>
+              </label>
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="promocode" placeholder="Промокод"/>
+              </label>
+              <label class="form-def__privacy">
+                <input class="form-def__privacy-checkbox" type="checkbox"/><span class="form-def__privacy-ico">
+                  <svg class="ico ico-mono-check">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-check"></use>
+                  </svg></span><span class="form-def__privacy-text"><a href="#" target="_blank">Даю согласие на обработку данных</a></span>
+              </label><span class="form-def__field form-def__field_btn">
+                <button class="form-def__button a-button" type="submit"><span>Отправить заявку</span></button></span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="s-popup" id="popupOrder">
+        <div class="s-popup__form">
+          <form class="form-def" action="">
+            <p class="form-def__title a-font_h4">Записаться на курс</p>
+            <div class="form-def__inner">
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="name" placeholder="Имя"/>
+              </label>
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="email" placeholder="Почта"/>
+              </label>
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="phone" placeholder="Телефон*"/>
+              </label>
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="promocode" placeholder="Промокод"/>
+              </label>
+              <label class="form-def__privacy">
+                <input class="form-def__privacy-checkbox" type="checkbox"/><span class="form-def__privacy-ico">
+                  <svg class="ico ico-mono-check">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-check"></use>
+                  </svg></span><span class="form-def__privacy-text"><a href="#" target="_blank">Даю согласие на обработку данных</a></span>
+              </label><span class="form-def__field form-def__field_btn">
+                <button class="form-def__button a-button" type="submit"><span>Записаться</span></button></span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="s-popup" id="popupCall">
+        <div class="s-popup__form">
+          <form class="form-def" action="">
+            <p class="form-def__title a-font_h4">Заказать обратный звонок</p>
+            <div class="form-def__inner">
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="name" placeholder="Имя"/>
+              </label>
+              <label class="form-def__field">
+                <input class="form-def__input" type="text" name="phone" placeholder="Телефон"/>
+              </label>
+              <label class="form-def__privacy">
+                <input class="form-def__privacy-checkbox" type="checkbox"/><span class="form-def__privacy-ico">
+                  <svg class="ico ico-mono-check">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-check"></use>
+                  </svg></span><span class="form-def__privacy-text"><a href="#" target="_blank">Даю согласие на обработку данных</a></span>
+              </label><span class="form-def__field form-def__field_btn">
+                <button class="form-def__button a-button" type="submit"><span>Перезвоните мне</span></button></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script defer src="./js/vendor.js"></script>
+    <script defer src="./js/main.js"></script>
+  </body>
+</html>
