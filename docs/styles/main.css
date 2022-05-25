@@ -1562,6 +1562,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 3rem;
+  min-width: 12.5rem;
   padding: 0.75rem 0.9375rem;
   font-size: 0.875rem;
   font-weight: 500;
@@ -1601,6 +1602,18 @@ body {
 
 .button--brown:hover,
 .btn--brown:hover {
+  border-color: #d2b48c;
+}
+
+.button--brown-light,
+.btn--brown-light {
+  color: #d2b48c;
+  border-color: #d2b48c;
+  background-color: transparent;
+}
+
+.button--brown-light:hover,
+.btn--brown-light:hover {
   border-color: #d2b48c;
 }
 
@@ -1768,6 +1781,36 @@ h6,
 .ico-color-thanks {
   width: 1.32em;
   height: 1em;
+}
+
+.ico-mono-booking_1 {
+  width: 0.74em;
+  height: 1em;
+  fill: tan;
+}
+
+.ico-mono-booking_2 {
+  width: 1em;
+  height: 1em;
+  fill: tan;
+}
+
+.ico-mono-booking_3 {
+  width: 1em;
+  height: 1em;
+  fill: tan;
+}
+
+.ico-mono-booking_4 {
+  width: 0.42em;
+  height: 1em;
+  fill: tan;
+}
+
+.ico-mono-booking_5 {
+  width: 0.81em;
+  height: 1em;
+  fill: tan;
 }
 
 .ico-mono-check {
@@ -3303,6 +3346,82 @@ h6,
   background-color: #d2b48c;
 }
 
+.s-booking {
+  background-color: #23356b;
+}
+
+.s-booking__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.s-booking__data {
+  margin-bottom: 2.5rem;
+  flex-basis: 100%;
+}
+
+.s-booking__info {
+  flex-basis: 100%;
+}
+
+.s-booking .section__title {
+  color: #fff;
+}
+
+.s-booking__about {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.875rem;
+  gap: 1.25rem;
+}
+
+.s-booking__item-title {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d2b48c;
+}
+
+.s-booking__item-text {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.s-booking__buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.s-booking__buttons .button--red:hover {
+  border-color: #fe334a;
+}
+
+.s-booking-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9375rem;
+}
+
+.s-booking-info__item-icon {
+  width: 1.25rem;
+  margin-right: 1.25rem;
+  flex: none;
+}
+
+.s-booking-info__item-icon svg {
+  width: 100%;
+  height: 1.4375rem;
+  min-width: 1.25rem;
+}
+
+.s-booking-info__item-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -3791,6 +3910,37 @@ h6,
 
   .s-other-courses__item-button.button {
     opacity: 0;
+  }
+
+  .s-booking__inner {
+    grid-gap: 1.875rem;
+    flex-wrap: nowrap;
+  }
+
+  .s-booking__data {
+    margin-bottom: 0;
+    flex-basis: 70%;
+  }
+
+  .s-booking__info {
+    flex-basis: 30%;
+  }
+
+  .s-booking__about {
+    margin-bottom: 5rem;
+    gap: 2.5rem;
+  }
+
+  .s-booking__item-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .s-booking__buttons {
+    gap: 0.9375rem;
+  }
+
+  .s-booking-info__item {
+    margin-bottom: 1.25rem;
   }
 }
 

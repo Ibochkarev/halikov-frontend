@@ -69,6 +69,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: rem(48);
+  min-width: rem(200);
   padding: rem(12) rem(15);
   font-size: rem(14);
   font-weight: 500;
@@ -107,6 +108,16 @@ body {
   &--brown {
     color: $blue;
     background-color: $light-brown;
+
+    &:hover {
+      border-color: $light-brown;
+    }
+  }
+
+  &--brown-light {
+    color: $light-brown;
+    border-color: $light-brown;
+    background-color: transparent;
 
     &:hover {
       border-color: $light-brown;
