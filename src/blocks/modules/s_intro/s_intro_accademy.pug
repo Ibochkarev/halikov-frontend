@@ -1,0 +1,41 @@
+-
+  const introList = [
+    {
+      title: 'Срок обучения 1 месяц',
+    },
+    {
+      title: 'Проверка домашних заданий',
+    },
+    {
+      title: 'Заморозка 14 дней',
+    },
+    {
+      title: 'Сертификат об окончании курса',
+    }
+  ]
+
+section.section.s-intro
+  .l-default
+    .s-intro__wrapper
+      .s-intro__left
+        h1.s-intro__subtitle ОНЛАЙН КУРС «Брюки»
+        .s-intro__text.a-font_text
+          p Вы научитесь шить быстрым способом брюки, за 1 день, невидимые карманы, невидимые швы, стильный крой. Быстрая сдача работы.
+          p Лекало в комплекте
+        .s-intro-data
+          .s-intro-data__item
+            .s-intro-data__item-title Предаватель
+            .s-intro-data__item-info
+              .s-intro-data__item-image
+                img(src="./img/s-popup/photo.jpg", alt="")
+              .s-intro-data__item-text Рамиль<br> Халиков
+          .s-intro-data__item
+            .s-intro-data__item-title Период обучение
+            .s-intro-data__item-info
+              .s-intro-data__item-text 1 месяц
+      .s-intro__right
+        ul.s-intro-list
+          each item in introList
+            li.s-intro-list__item.a-font_text!=item.title
+        a.s-intro__button.button.button--red(href="#" data-fancybox="" data-src="#popupOrder") Записаться на курс
+

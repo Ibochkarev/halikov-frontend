@@ -2728,7 +2728,7 @@ h6,
 
 .s-intro__button {
   width: 100%;
-  max-width: 14.375rem;
+  max-width: max-content;
 }
 
 .s-intro__button:hover {
@@ -2754,6 +2754,57 @@ h6,
 .s-intro-info__item-text {
   max-width: 16.875rem;
   font-family: "Open Sans", sans-serif;
+}
+
+.s-intro-data {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.s-intro-data__item-title {
+  margin-bottom: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.s-intro-data__item-info {
+  display: flex;
+  align-items: center;
+}
+
+.s-intro-data__item-image {
+  margin-right: 0.9375rem;
+  flex: none;
+}
+
+.s-intro-data__item-image img {
+  width: 5rem;
+  height: auto;
+  border-radius: 100%;
+}
+
+.s-intro-list {
+  margin-bottom: 2.375rem;
+}
+
+.s-intro-list__item {
+  position: relative;
+  padding-left: 1.875rem;
+}
+
+.s-intro-list__item::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1.0625rem;
+  height: 0.875rem;
+  transform: translateY(-50%);
+  content: " ";
+  background-image: url("../img/global/check.svg");
 }
 
 .s-teams__wrapper {
