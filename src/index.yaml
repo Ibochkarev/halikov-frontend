@@ -2,16 +2,18 @@ ProjectTitle: Halikov
 
 PageList:
   - file: homepage.html
-    ready: 80
+    ready: 100
   - file: teams.html
     ready: 100
   - file: blog.html
     ready: 100
   - file: bespoke-academy.html
-    ready: 10
+    ready: 100
   - file: academy-offline.html
-    ready: 50
+    ready: 100
   - file: contacts.html
-    ready: 50
+    ready: 100
+  - file: cart.html
+    ready: 100
   - file: 404.html
     ready: 1
