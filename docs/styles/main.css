@@ -2206,6 +2206,16 @@ h6,
   color: #fff;
 }
 
+.s-video-intro {
+  height: 21.875rem;
+}
+
+.s-video-intro video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
 .header {
   padding: 2rem 0;
   background-color: #23356b;
@@ -3179,16 +3189,6 @@ h6,
   line-height: 1.4;
 }
 
-.s-video-intro {
-  height: 21.875rem;
-}
-
-.s-video-intro video {
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
-}
-
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -3320,6 +3320,14 @@ h6,
     font-size: 1.125rem;
   }
 
+  .s-video-intro {
+    height: 41.375rem;
+  }
+
+  .s-video-intro._mini {
+    height: 31.625rem;
+  }
+
   .header__logo img {
     height: 4.9375rem;
   }
@@ -3346,7 +3354,7 @@ h6,
   }
 
   .s-intro {
-    margin-top: -18.75rem;
+    margin-top: -16.25rem;
   }
 
   .s-intro__inner {
@@ -3450,10 +3458,6 @@ h6,
 
   .s-who__item-image img {
     max-width: 5.1875rem;
-  }
-
-  .s-video-intro {
-    height: 41.375rem;
   }
 }
 

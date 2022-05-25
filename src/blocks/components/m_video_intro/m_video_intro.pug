@@ -1,0 +1,4 @@
+mixin m_video_intro(linkVideo, poster, className)
+  .s-video-intro(class!=className)
+    video(poster!=poster autoplay='' playsinline='' muted='' loop='')
+      source(src!=linkVideo type='video/mp4')

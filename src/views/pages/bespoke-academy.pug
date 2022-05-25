@@ -3,8 +3,10 @@ include ../helpers/_mixins
 
 block variables
   - const title = "ОНЛАЙН КУРС «Брюки»"
+  - const introClassName = 's-video-intro--mini'
 
 block content
+  +m_video_intro('https://storage.coverr.co/videos/KSZ8Vw1N3c325d6meDgR02stF4hSW3gfm?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjUzNDU5MzI5fQ.SgqjfWHsj6a0jZZQlG3QiRXG1cDdmgxl3gTER9Z1hfg', 'poster', '_mini')
   include ../../../src/blocks/modules/s_training/s_training.pug
   include ../../../src/blocks/modules/s_who/s_who.pug
   include ../../../src/blocks/modules/s_included/s_included.pug
