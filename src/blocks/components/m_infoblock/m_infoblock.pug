@@ -1,0 +1,13 @@
+mixin m_infoblock(title, note)
+  section.s-infoblock.section
+    .s-infoblock__inner
+      .l-default
+        .s-infoblock__wrapper
+          .s-infoblock__info
+            .s-infoblock__title
+              p!= title
+            if note
+              .s-infoblock__note!= note
+            a.button.s-infoblock__button(href="#" data-fancybox="" data-src="#popupInfoAction") Подробнее
+          .s-infoblock__photo
+            img(src="./img/s-infoblock/cover.jpg", alt="", loading="lazy")

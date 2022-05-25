@@ -32,6 +32,10 @@
     @media (min-width: 768px) {
       font-size: rem(30);
     }
+
+    span {
+      color: $light-brown;
+    }
   }
 
   &__note {
@@ -39,6 +43,7 @@
   }
 
   &__button {
+    min-width: rem(200);
     color: $white;
 
     &:hover {

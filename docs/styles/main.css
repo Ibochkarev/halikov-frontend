@@ -2216,6 +2216,53 @@ h6,
   object-fit: cover;
 }
 
+.s-infoblock__inner {
+  color: #fff;
+  background-color: #23356b;
+}
+
+.s-infoblock__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+.s-infoblock__info {
+  padding: 0 0 1.5625rem;
+  flex-basis: 100%;
+}
+
+.s-infoblock__title {
+  font-size: 1.375rem;
+  line-height: 1.4;
+}
+
+.s-infoblock__title span {
+  color: #d2b48c;
+}
+
+.s-infoblock__note {
+  margin-bottom: 1.875rem;
+}
+
+.s-infoblock__button {
+  min-width: 12.5rem;
+  color: #fff;
+}
+
+.s-infoblock__button:hover {
+  color: #23356b;
+  border-color: #d2b48c;
+  background-color: #d2b48c;
+}
+
+.s-infoblock__photo {
+  overflow: hidden;
+  position: relative;
+  padding-top: 1.5625rem;
+  flex-basis: 100%;
+}
+
 .header {
   padding: 2rem 0;
   background-color: #23356b;
@@ -2664,48 +2711,6 @@ h6,
 .s-intro-info__item-text {
   max-width: 16.875rem;
   font-family: "Open Sans", sans-serif;
-}
-
-.s-infoblock__inner {
-  color: #fff;
-  background-color: #23356b;
-}
-
-.s-infoblock__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-}
-
-.s-infoblock__info {
-  padding: 0 0 1.5625rem;
-  flex-basis: 100%;
-}
-
-.s-infoblock__title {
-  font-size: 1.375rem;
-  line-height: 1.4;
-}
-
-.s-infoblock__note {
-  margin-bottom: 1.875rem;
-}
-
-.s-infoblock__button {
-  color: #fff;
-}
-
-.s-infoblock__button:hover {
-  color: #23356b;
-  border-color: #d2b48c;
-  background-color: #d2b48c;
-}
-
-.s-infoblock__photo {
-  overflow: hidden;
-  position: relative;
-  padding-top: 1.5625rem;
-  flex-basis: 100%;
 }
 
 .s-teams__wrapper {
@@ -3442,6 +3447,32 @@ h6,
     height: 31.625rem;
   }
 
+  .s-infoblock__wrapper {
+    flex-direction: row;
+  }
+
+  .s-infoblock__info {
+    margin-bottom: 0;
+    padding: 2.8125rem 0;
+    flex-basis: 60%;
+  }
+
+  .s-infoblock__title {
+    font-size: 1.875rem;
+  }
+
+  .s-infoblock__photo {
+    padding-top: 0;
+    flex-basis: 40%;
+  }
+
+  .s-infoblock__photo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .header__logo img {
     height: 4.9375rem;
   }
@@ -3486,32 +3517,6 @@ h6,
 
   .s-intro__right {
     flex-basis: 40%;
-  }
-
-  .s-infoblock__wrapper {
-    flex-direction: row;
-  }
-
-  .s-infoblock__info {
-    margin-bottom: 0;
-    padding: 2.8125rem 0;
-    flex-basis: 60%;
-  }
-
-  .s-infoblock__title {
-    font-size: 1.875rem;
-  }
-
-  .s-infoblock__photo {
-    padding-top: 0;
-    flex-basis: 40%;
-  }
-
-  .s-infoblock__photo img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
   .s-teams__item-photo {
