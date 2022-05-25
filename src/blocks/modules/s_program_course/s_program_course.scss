@@ -1,0 +1,53 @@
+.s-program-course {
+  background-color: $blue;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: 992px) {
+      grid-gap: rem(30);
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__form {
+    flex-basis: 100%;
+
+    @media (min-width: 992px) {
+      flex-basis: 40%;
+    }
+  }
+
+  &__info {
+    flex-basis: 100%;
+
+    @media (min-width: 992px) {
+      flex-basis: 60%;
+    }
+
+    .form-def {
+      max-width: rem(560);
+    }
+  }
+
+  &__text {
+    max-width: rem(530);
+    color: $white;
+  }
+
+  .section__title {
+    color: $white;
+  }
+
+  .form-def {
+    @media (min-width: 992px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__button {
+      text-transform: uppercase;
+    }
+  }
+}

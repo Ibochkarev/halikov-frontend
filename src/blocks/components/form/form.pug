@@ -1,4 +1,4 @@
-mixin form(title, btnText='Отправить заявку', variantInputs)
+mixin form(title, btnText='Отправить заявку', variantInputs, classNameButton)
   form.form-def(action="")
     if title
       p.form-def__title.a-font_h4!= title
@@ -21,7 +21,7 @@ mixin form(title, btnText='Отправить заявку', variantInputs)
           a(href='#', target='_blank') Даю согласие на обработку данных
 
       span.form-def__field.form-def__field_btn
-        button.form-def__button.a-button(type='submit')
+        button.form-def__button.a-button(type='submit' class!=classNameButton)
           span!= btnText
 
 mixin formInput(type="text", name, placeholder, classname, value, attributes, options, option_other=false, label)
