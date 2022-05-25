@@ -1,0 +1,111 @@
+.header {
+  padding: rem(32) 0;
+  background-color: $blue;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    img {
+      height: rem(43);
+
+      @media (min-width: 768px) {
+        height: rem(79);
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: rem(16);
+    grid-gap: rem(16);
+  }
+
+  &__phone {
+    font-size: rem(16);
+    font-weight: 700;
+    text-decoration: none;
+    color: $light-brown;
+    @include tr(all);
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__call-btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: rem(29);
+    padding: rem(8) rem(14);
+    font-size: rem(14);
+    text-decoration: none;
+    color: $light-brown;
+    border: rem(1) solid;
+    border-color: $light-brown;
+    outline: none;
+    @include tr(all);
+
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
+  }
+
+  &__langs {
+    display: flex;
+    align-items: center;
+    grid-gap: rem(16);
+
+    &-item {
+      cursor: pointer;
+      display: block;
+      font-size: rem(14);
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $white;
+      @include tr(all);
+
+      &._active {
+        cursor: default;
+        font-weight: 700;
+      }
+
+      &:hover {
+        font-weight: 700;
+        opacity: 0.8;
+      }
+    }
+
+    &-line {
+      width: rem(1);
+      height: rem(10);
+      background-color: $light-brown;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: rem(40);
+    list-style-type: none;
+
+    ul {
+      display: none;
+    }
+
+    &-link {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

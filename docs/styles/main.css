@@ -2206,6 +2206,112 @@ h6,
   color: #fff;
 }
 
+.header {
+  padding: 2rem 0;
+  background-color: #23356b;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo img {
+  height: 2.6875rem;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  grid-gap: 1rem;
+}
+
+.header__phone {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #d2b48c;
+  transition: all 0.4s ease;
+}
+
+.header__phone:hover {
+  color: #fff;
+}
+
+.header__call-btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.8125rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #d2b48c;
+  border: 0.0625rem solid;
+  border-color: #d2b48c;
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+.header__call-btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.header__langs {
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+.header__langs-item {
+  cursor: pointer;
+  display: block;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.header__langs-item._active {
+  cursor: default;
+  font-weight: 700;
+}
+
+.header__langs-item:hover {
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.header__langs-line {
+  width: 0.0625rem;
+  height: 0.625rem;
+  background-color: #d2b48c;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2.5rem;
+  list-style-type: none;
+}
+
+.header__menu ul {
+  display: none;
+}
+
+.header__menu-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
 .footer {
   padding: 1.875rem 0 2.1875rem;
   color: #fff;
@@ -3198,6 +3304,10 @@ h6,
   .button,
   .btn {
     font-size: 1.125rem;
+  }
+
+  .header__logo img {
+    height: 4.9375rem;
   }
 
   .footer {
