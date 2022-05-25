@@ -3223,6 +3223,81 @@ h6,
   text-transform: uppercase;
 }
 
+.s-other-courses__wrapper {
+  display: grid;
+  margin-bottom: 1.875rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.s-other-courses__item {
+  position: relative;
+  height: 13.25rem;
+  transition: all 0.5s ease;
+}
+
+.s-other-courses__item:hover .s-other-courses__item-button {
+  opacity: 1;
+}
+
+.s-other-courses__item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 53, 107, 0.7);
+  content: "";
+  z-index: 1;
+}
+
+.s-other-courses__item-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-other-courses__item-info {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.625rem;
+}
+
+.s-other-courses__item-title {
+  margin-bottom: 0.3125rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d2b48c;
+}
+
+.s-other-courses__item-button {
+  position: absolute;
+  bottom: 1.375rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.s-other-courses__item-button.button {
+  min-height: 1.6875rem;
+  padding: 0 0.9375rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #23356b;
+  opacity: 1;
+  background-color: #d2b48c;
+}
+
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -3256,6 +3331,11 @@ h6,
   }
 
   .s-included__wrapper {
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .s-other-courses__wrapper {
     grid-gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3703,6 +3783,10 @@ h6,
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  .s-other-courses__item-button.button {
+    opacity: 0;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -3796,6 +3880,12 @@ h6,
   }
 
   .s-included__wrapper {
+    margin-bottom: 4.1875rem;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .s-other-courses__wrapper {
     margin-bottom: 4.1875rem;
     grid-gap: 2.5rem;
     grid-template-columns: repeat(3, 1fr);

@@ -1,0 +1,27 @@
+-
+  const otherCoursesItems = [
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название курса',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название курса',
+    },
+    {
+      image: './img/s-blog/photo.jpg',
+      title: 'Название курса',
+    },
+  ]
+
+section.section.s-other-courses
+  .l-default
+    h2.section__title.a-font_h2 Другие курсы<br> Bespoke Academy
+    .s-other-courses__wrapper
+      each item in otherCoursesItems
+        .s-other-courses__item
+          .s-other-courses__item-overlay
+          img.s-other-courses__item-image(src!= item.image  alt="")
+          .s-other-courses__item-info
+            .s-other-courses__item-title.a-font_text-m!= item.title
+            a.s-other-courses__item-button.button.button--brown(href="#") Подробнее
