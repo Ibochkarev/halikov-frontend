@@ -3473,6 +3473,53 @@ h6,
   color: #fff;
 }
 
+.s-cost__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -17.5rem;
+  padding: 1.875rem;
+  flex-wrap: wrap;
+  background-color: #23356b;
+  gap: 3.75rem;
+}
+
+.s-cost__text {
+  max-width: 34.375rem;
+  margin-bottom: 1.875rem;
+  color: #fff;
+}
+
+.s-cost__price {
+  margin-bottom: 2.5rem;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.s-cost__buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.s-cost__buttons .button--red:hover {
+  border-color: #fe334a;
+}
+
+.s-cost__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-cost__image img {
+  width: 100%;
+  height: auto;
+  max-width: 23.75rem;
+}
+
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -3993,6 +4040,10 @@ h6,
   .s-booking-info__item {
     margin-bottom: 1.25rem;
   }
+
+  .s-cost__buttons {
+    gap: 0.9375rem;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -4108,6 +4159,17 @@ h6,
 @media (max-width: 992px) {
   .accordion-item__question {
     margin: 0.625rem 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .s-cost__inner {
+    margin-top: 2.5rem;
+    flex-direction: column-reverse;
+  }
+
+  .s-cost__col {
+    width: 100%;
   }
 }
 

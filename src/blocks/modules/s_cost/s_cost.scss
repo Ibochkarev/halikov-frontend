@@ -1,0 +1,63 @@
+.s-cost {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem(-280);
+    padding: rem(30);
+    flex-wrap: wrap;
+    background-color: $blue;
+    gap: rem(60);
+
+    @media (max-width: 991px) {
+      margin-top: rem(40);
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text {
+    max-width: rem(550);
+    margin-bottom: rem(30);
+    color: $white;
+  }
+
+  &__price {
+    margin-bottom: rem(40);
+    font-size: rem(22);
+    font-weight: 600;
+    color: $white;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: rem(10);
+
+    @media (min-width: 992px) {
+      gap: rem(15);
+    }
+
+    .button--red:hover {
+      border-color: $red;
+    }
+  }
+
+  &__col {
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: rem(380);
+    }
+  }
+}
