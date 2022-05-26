@@ -3655,6 +3655,10 @@ h6,
   margin-bottom: 0.75rem;
 }
 
+.s-cart__info label {
+  cursor: pointer;
+}
+
 .s-cart__info label:not(:last-child) {
   margin-bottom: 0.625rem;
 }
@@ -3770,6 +3774,13 @@ h6,
   .a-font_text-xxl {
     font-size: 1.125rem;
     line-height: 1.56;
+  }
+}
+
+@media (min-width: 670px) {
+  .s-cart__item {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

@@ -21,6 +21,11 @@
     flex-direction: column;
     flex-wrap: wrap;
 
+    @media (min-width: 670px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
     &-top {
       display: flex;
       align-items: center;
@@ -152,6 +157,8 @@
     }
 
     label {
+      cursor: pointer;
+
       &:not(:last-child) {
         margin-bottom: rem(10);
 
