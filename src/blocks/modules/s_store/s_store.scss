@@ -1,0 +1,17 @@
+.s-store {
+  .page {
+    &__title {
+      text-align: center;
+    }
+
+    &__introtext {
+      max-width: rem(600);
+      margin: 0 auto rem(60);
+      text-align: center;
+
+      @media (min-width: 992px) {
+        margin: 0 auto rem(100);
+      }
+    }
+  }
+}

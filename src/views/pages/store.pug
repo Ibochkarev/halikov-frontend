@@ -1,0 +1,14 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Bespoke store"
+
+block content
+  .l-default
+    +breadcrumb(['Главная'], 'Bespoke store')
+  include ../../../src/blocks/modules/s_store/s_store.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

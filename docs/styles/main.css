@@ -3713,6 +3713,16 @@ h6,
   border-top: 0.0625rem solid #d2b48c;
 }
 
+.s-store .page__title {
+  text-align: center;
+}
+
+.s-store .page__introtext {
+  max-width: 37.5rem;
+  margin: 0 auto 3.75rem;
+  text-align: center;
+}
+
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -4287,6 +4297,10 @@ h6,
 
   .s-cart-total {
     padding: 2.8125rem 2.1875rem;
+  }
+
+  .s-store .page__introtext {
+    margin: 0 auto 6.25rem;
   }
 }
 

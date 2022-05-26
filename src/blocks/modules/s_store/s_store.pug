@@ -1,0 +1,43 @@
+-
+  const categoriesItems = [
+    {
+      title: '1',
+      products: [
+        {
+          title: 'test'
+        }
+      ]
+    },
+    {
+      title: '2',
+      products: [
+        {
+          title: 'test 2'
+        }
+      ]
+    },
+  ]
+
+section.section.s-store
+  .l-default
+    h1.page__title.a-font_h1= title
+    .page__introtext.a-font_text Необходимые материалы для выполнения при прохождении курсов Bespoke Academy
+    .s-store__tabs
+      .s-store__tabs-list(role='tablist' aria-label='')
+        each tab, index in categoriesItems
+          if index == 0
+            button.s-store__tabs-item(id='tab_' + index  role='tab' aria-selected='true')!= tab.title
+          else
+            button.s-store__tabs-item(id='tab_' + index  role='tab' aria-selected='false')!= tab.title
+      .s-store__tabs-content
+        each tab, index in categoriesItems
+          if index == 0
+            .s-store__tabs-panel(role='tabpanel' aria-labelledby='tab_' + index)
+              each card in tab.products
+                p!= card.title
+          else
+            .s-store__tabs-panel(role='tabpanel' aria-labelledby='tab_' + index hidden)
+              each card in tab.products
+                p!= card.title
+
+
