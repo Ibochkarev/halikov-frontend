@@ -1,0 +1,11 @@
+mixin m_product(title, description, image, price, priceNote)
+  .m-product
+    .m-product__image
+      img(src!= image  alt="")
+    .m-product__info
+      .m-product__info-data
+        .m-product__title!= title
+        if priceNote
+          .m-product__pricenote!= priceNote
+        .m-product__price!= price
+    button.m-product__button(type="button", data-title!= title, data-price!= price, data-pricenote!= priceNote, data-description!= description) В корзину

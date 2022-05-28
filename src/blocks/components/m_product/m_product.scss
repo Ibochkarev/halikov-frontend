@@ -1,0 +1,82 @@
+.m-product {
+  position: relative;
+  height: 100%;
+  padding: rem(20) rem(20) rem(60);
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  transition: 0.5s all ease;
+
+  &:hover {
+    border: rem(1) solid $blue;
+    box-shadow: 0 rem(4) rem(25) rgba(0, 0, 0, 0.15);
+  }
+
+  &__image {
+    margin-bottom: rem(15);
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: rem(160);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: rem(10);
+    font-size: rem(16);
+    font-weight: rem(600);
+    color: $blue;
+
+    @media (min-width: 1200px) {
+      font-size: rem(22);
+    }
+  }
+
+  &__pricenote {
+    margin-bottom: rem(10);
+    font-family: $primary_font;
+    font-size: rem(12);
+    color: #252323;
+  }
+
+  &__price {
+    margin-bottom: rem(25);
+    font-size: rem(18);
+    font-weight: 700;
+    color: $blue;
+
+    @media (min-width: 1200px) {
+      font-size: rem(24);
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    bottom: rem(30);
+    left: 50%;
+    padding: rem(7) rem(15);
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: rem(18);
+    text-align: center;
+    color: $blue;
+    border: rem(1) solid $light-brown;
+    transform: translateX(-50%);
+    transition: 0.5s all ease;
+    white-space: nowrap;
+    background-color: $white;
+
+    &:hover {
+      background-color: $light-brown;
+    }
+  }
+}
