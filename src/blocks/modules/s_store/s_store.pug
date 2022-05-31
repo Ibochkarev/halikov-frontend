@@ -2,6 +2,7 @@
   const categoriesItems = [
     {
       title: 'Брюки',
+      icon: './img/products/cat_01.svg',
       products: [
         {
           title: 'Все необходимые материалы курса «Брюки»',
@@ -63,6 +64,7 @@
     },
     {
       title: 'Пиджак',
+      icon: './img/products/cat_02.svg',
       products: [
         {
           title: 'Все необходимые материалы курса «Брюки»',
@@ -124,6 +126,7 @@
     },
     {
       title: 'Жилет',
+      icon: './img/products/cat_03.svg',
       products: [
         {
           title: 'Все необходимые материалы курса «Брюки»',
@@ -185,6 +188,7 @@
     },
     {
       title: 'Пальто',
+      icon: './img/products/cat_04.svg',
       products: [
         {
           title: 'Все необходимые материалы курса «Брюки»',
@@ -246,6 +250,7 @@
     },
     {
       title: 'Сорочки',
+      icon: './img/products/cat_05.svg',
       products: [
         {
           title: 'Все необходимые материалы курса «Брюки»',
@@ -309,11 +314,11 @@ section.section.s-store
         each tab, index in categoriesItems
           if index == 0
             button.s-store__tabs-item(id='tab_' + index  role='tab' aria-selected='true')
-              img(src="", alt="")
+              img(src!= tab.icon, alt!= tab.title)
               span!= tab.title
           else
             button.s-store__tabs-item(id='tab_' + index  role='tab' aria-selected='false')
-              img(src="", alt="")
+              img(src!= tab.icon, alt!= tab.title)
               span!= tab.title
       .s-store__tabs-content
         each tab, index in categoriesItems

@@ -1,8 +1,11 @@
 header.header
   .l-default
     .header__wrapper
-      a.header__logo(href="")
-        img(src="./img/global/logo.svg", alt="")
+      .header__mobile
+        a.header__logo(href="")
+          img(src="./img/global/logo.svg", alt="")
+        button.header__toggle(type='button' aria-label='toggle menu')
+          span(aria-hidden='true')
       .header__info
         .header__top
           a.header__phone(href="tel:+78008969623") +7 800 896 96 23
@@ -15,7 +18,7 @@ header.header
         .header__bottom
           nav.header__menu
             li.header__menu-item
-              a.header__menu-link(href="") Об Академии
+              a.header__menu-link(href="/bespoke-academy.html") Об Академии
             li.header__menu-item
               a.header__menu-link(href="") Курсы
               ul
@@ -28,10 +31,10 @@ header.header
                 li
                   a(href="#") Название курса
             li.header__menu-item
-              a.header__menu-link(href="") Bespoke Store
+              a.header__menu-link(href="/store.html") Bespoke Store
             li.header__menu-item
-              a.header__menu-link(href="") Bespoke Offline
+              a.header__menu-link(href="/academy-offline.html") Bespoke Offline
             li.header__menu-item
-              a.header__menu-link(href="") Контакты
+              a.header__menu-link(href="/blog.html") Блог
             li.header__menu-item
-              a.header__menu-link(href="") Контакты
+              a.header__menu-link(href="/contacts.html") Контакты
