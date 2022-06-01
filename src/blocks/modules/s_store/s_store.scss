@@ -15,6 +15,12 @@
     }
   }
 
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: rem(22);
+  }
+
   &__tabs {
     &-list {
       display: flex;
@@ -52,6 +58,8 @@
       img {
         display: inline-block;
         width: rem(40);
+        height: auto;
+        max-height: rem(44);
         margin-right: rem(15);
       }
 
@@ -100,6 +108,117 @@
     @media (min-width: 992px) {
       gap: rem(35);
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.minicart {
+  position: relative;
+  width: rem(220);
+
+  &:hover {
+    .minicart__wrapper {
+      display: block;
+    }
+  }
+
+  &__headline {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: rem(10);
+    gap: rem(15);
+  }
+
+  &__title {
+    font-family: $primary_font;
+    font-size: rem(18);
+    line-height: rem(25);
+    color: #000;
+  }
+
+  &__icon {
+    position: relative;
+    width: rem(49);
+    height: rem(49);
+
+    svg {
+      width: rem(49);
+      height: rem(49);
+    }
+
+    span {
+      position: absolute;
+      top: rem(-15);
+      right: rem(-15);
+      display: block;
+      height: rem(29);
+      min-width: rem(29);
+      padding-right: rem(9);
+      padding-left: rem(9);
+      font-family: $primary_font;
+      font-size: rem(20);
+      font-weight: 600;
+      line-height: rem(29);
+      text-align: center;
+      color: $blue;
+      border-radius: 100%;
+      content: "";
+      background-color: $light-brown;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    display: none;
+    width: 100%;
+    padding: rem(10);
+    background: $white;
+    box-shadow: 0 rem(4) rem(30) rgba(0, 0, 0, 0.07);
+
+    &::after {
+      position: absolute;
+      top: rem(-30);
+      left: 50%;
+      border: rem(15) solid transparent;
+      transform: translateX(-50%);
+      content: "";
+      border-bottom: rem(15) solid $white;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: rem(14) 0;
+
+    &:not(:last-child) {
+      border-bottom: rem(1) solid rgba(138, 138, 138, 0.2);
+    }
+
+    &-photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: rem(4);
+      flex: none;
+
+      img {
+        width: rem(33);
+        height: auto;
+      }
+    }
+
+    &-info {
+      font-family: $primary_font;
+      font-size: rem(10);
+      line-height: 1.23;
+      color: #7e7575;
+    }
+
+    &-title {
+      margin-bottom: rem(3);
     }
   }
 }

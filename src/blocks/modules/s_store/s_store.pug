@@ -305,8 +305,35 @@
     }
   ]
 
-section.section.s-store
+section.s-store
   .l-default
+    .s-store__top
+      .minicart
+        .minicart__headline
+          .minicart__title Корзина
+          .minicart__icon
+            +svgMono("shopping-cart")
+            span 5
+        .minicart__wrapper
+          .minicart__item
+            .minicart__item-photo
+              img(src="./img/s-store/01.png", alt="")
+            .minicart__item-info
+              .minicart__item-title Наперсток
+              .minicart__item-price 1000₽ за 1 шт
+          .minicart__item
+            .minicart__item-photo
+              img(src="./img/s-store/02.png", alt="")
+            .minicart__item-info
+              .minicart__item-title Наперсток
+              .minicart__item-price 1000₽ за 1 шт
+          .minicart__item
+            .minicart__item-photo
+              img(src="./img/s-store/03.png", alt="")
+            .minicart__item-info
+              .minicart__item-title Наперсток
+              .minicart__item-price 1000₽ за 1 шт
+
     h1.page__title.a-font_h1= title
     .page__introtext.a-font_text Необходимые материалы для выполнения при прохождении курсов Bespoke Academy
     .s-store__tabs
