@@ -2572,8 +2572,47 @@ h6,
   flex-direction: column;
 }
 
+.header__menu-item {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.625rem;
+}
+
+.header__menu-item:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
 .header__menu ul {
   display: none;
+  width: 10.625rem;
+  padding: 1.5rem 0.8125rem;
+  background: #fff;
+  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.07);
+  opacity: 0;
+  transition: all 0.5s ease;
+  list-style: none;
+  visibility: hidden;
+}
+
+.header__menu ul li {
+  display: block;
+}
+
+.header__menu ul li:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.header__menu ul li::before {
+  display: none;
+}
+
+.header__menu ul li a {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  text-decoration: none;
+  color: #252323;
 }
 
 .header__menu-link {
@@ -4064,7 +4103,7 @@ h6,
 .minicart__icon span {
   position: absolute;
   top: -0.9375rem;
-  right: -0.9375rem;
+  right: -0.625rem;
   display: block;
   height: 1.8125rem;
   min-width: 1.8125rem;
@@ -4827,6 +4866,31 @@ h6,
     margin-top: 0;
     flex-direction: row;
   }
+
+  .header__menu {
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .header__menu ul {
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header__menu ul::after {
+    position: absolute;
+    top: -1.875rem;
+    left: 50%;
+    border: 0.9375rem solid transparent;
+    transform: translateX(-50%);
+    content: "";
+    border-bottom: 0.9375rem solid #fff;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -4873,12 +4937,8 @@ h6,
     font-size: 1.5rem;
   }
 
-  .header__menu {
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 0;
-    flex-direction: row;
-    gap: 2.5rem;
+  .header__menu ul li:not(:last-child) {
+    margin-bottom: 0.875rem;
   }
 
   .s-course-direction__wrapper {
@@ -4927,6 +4987,13 @@ h6,
 }
 
 @media (max-width: 1024px) {
+  .header__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .header__info {
     display: none;
     flex-direction: column-reverse;
@@ -4950,15 +5017,6 @@ h6,
   }
 
   .s-cost__col {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .header__mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
   }
 }

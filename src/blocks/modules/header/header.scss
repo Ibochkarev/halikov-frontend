@@ -2,10 +2,6 @@
   padding: rem(14) 0;
   background-color: $blue;
 
-  // &._active {
-  //   height: 100vh;
-  // }
-
   @media (min-width: 1024px) {
     padding: rem(32) 0;
   }
@@ -34,7 +30,7 @@
   }
 
   &__mobile {
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -216,7 +212,7 @@
     list-style-type: none;
     flex-direction: column;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
       align-items: center;
       justify-content: flex-end;
       margin-top: 0;
@@ -224,8 +220,70 @@
       gap: rem(40);
     }
 
+    &-item {
+      position: relative;
+      display: inline-block;
+      margin-bottom: rem(10);
+
+      &:hover {
+        ul {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
     ul {
       display: none;
+      width: rem(170);
+      padding: rem(24) rem(13);
+      background: $white;
+      box-shadow: 0 rem(4) rem(30) rgba(0, 0, 0, 0.07);
+      opacity: 0;
+      transition: all 0.5s ease;
+      list-style: none;
+      visibility: hidden;
+
+      @media (min-width: 1024px) {
+        position: absolute;
+        top: rem(40);
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::after {
+          position: absolute;
+          top: rem(-30);
+          left: 50%;
+          border: rem(15) solid transparent;
+          transform: translateX(-50%);
+          content: "";
+          border-bottom: rem(15) solid $white;
+        }
+      }
+
+      li {
+        display: block;
+
+        &:not(:last-child) {
+          margin-bottom: rem(10);
+
+          @media (min-width: 1200px) {
+            margin-bottom: rem(14);
+          }
+        }
+
+        &::before {
+          display: none;
+        }
+
+        a {
+          font-size: rem(14);
+          line-height: rem(18);
+          text-decoration: none;
+          color: #252323;
+        }
+      }
     }
 
     &-link {
