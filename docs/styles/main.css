@@ -4856,10 +4856,6 @@ h6,
     flex-wrap: nowrap;
   }
 
-  .header__toggle {
-    display: none;
-  }
-
   .header__top {
     align-items: center;
     justify-content: flex-end;
@@ -4890,6 +4886,12 @@ h6,
     transform: translateX(-50%);
     content: "";
     border-bottom: 0.9375rem solid #fff;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header__toggle {
+    display: none;
   }
 }
 
