@@ -8,4 +8,4 @@ mixin m_product(title, description, image, price, priceNote)
         if priceNote
           .m-product__pricenote!= priceNote
         .m-product__price!= price
-    button.m-product__button(type="button", data-title!= title, data-price!= price, data-pricenote!= priceNote, data-description!= description) В корзину
+    button.m-product__button(type="button", data-title!= title, data-price!= price, data-pricenote!= priceNote, data-description!= description, data-image!= image, data-fancybox="", data-src="#popupCart") В корзину

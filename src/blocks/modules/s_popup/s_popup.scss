@@ -55,6 +55,112 @@
     }
   }
 
+  &-product {
+    max-width: rem(784);
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.27);
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      @media (min-width: 660px) {
+        flex-direction: row;
+      }
+    }
+
+    &__photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: rem(35);
+      background-color: $white;
+
+      @media (min-width: 660px) {
+        width: 45%;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+
+    &__info {
+      width: 100%;
+      padding: rem(30) rem(20);
+      background: #f6f6f6;
+
+      @media (min-width: 660px) {
+        width: 55%;
+        padding: rem(50) rem(30);
+      }
+
+      &-top {
+        margin-bottom: rem(20);
+        border-bottom: rem(1) solid $light-brown;
+
+        @media (min-width: 660px) {
+          margin-bottom: rem(40);
+        }
+      }
+
+      &-bottom {
+        form {
+          display: flex;
+          align-items: center;
+          gap: rem(10);
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: rem(10);
+      font-family: $primary_font;
+      font-size: rem(24);
+      font-weight: 600;
+      color: $blue;
+    }
+
+    &__price {
+      margin-bottom: rem(20);
+      font-family: $primary_font;
+      font-size: rem(16);
+      font-weight: 700;
+      color: #252323;
+
+      @media (min-width: 660px) {
+        margin-bottom: rem(40);
+      }
+    }
+
+    &__description {
+      margin-bottom: rem(20);
+
+      @media (min-width: 660px) {
+        margin-bottom: rem(40);
+      }
+    }
+
+    &__button {
+      display: inline-flex;
+      align-items: center;
+      padding: rem(5) rem(8);
+      font-family: $primary_font;
+      text-transform: uppercase;
+      color: $white;
+      border: 0;
+      white-space: nowrap;
+      background-color: $red;
+
+      @media (min-width: 660px) {
+        padding: rem(8);
+        font-size: rem(18);
+      }
+    }
+  }
+
   &-action {
     @media (min-width: 992px) {
       .is-close {

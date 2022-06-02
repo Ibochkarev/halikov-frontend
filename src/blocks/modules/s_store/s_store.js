@@ -31,3 +31,26 @@ if (document.querySelector('.s-store__tabs')) {
     button.addEventListener('click', tabClickHandler);
   })
 }
+
+const productButton = document.querySelectorAll('.m-product__button'),
+  productPopup = document.getElementById("popupCart")
+
+productButton.forEach(button => {
+  button.addEventListener('click', e => {
+    let productTitle = button.dataset.title,
+      productPrice = button.dataset.price,
+      productPricenote = button.dataset.pricenote,
+      productDescription = button.dataset.description,
+      productImage = button.dataset.image,
+      popupProductTitle = document.querySelector('.s-popup-product__title'),
+      popupProductPrice = document.querySelector('.s-popup-product__price'),
+      popupProductDescription = document.querySelector('.s-popup-product__description'),
+      popupProductImage = document.querySelector('.s-popup-product__image')
+
+      popupProductTitle.innerHTML = productTitle
+      popupProductPrice.innerHTML = productPrice,
+      popupProductDescription.innerHTML = productDescription,
+      popupProductImage.srcset = productImage
+  });
+})
+

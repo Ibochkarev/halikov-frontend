@@ -73,4 +73,25 @@
   .s-popup__form
     +form('Заказать обратный звонок', 'Перезвоните мне', '')
 
+.s-popup.s-popup-product#popupCart
+  .s-popup-product__wrapper
+    .s-popup-product__photo
+      img.s-popup-product__image(src="", alt="")
+    .s-popup-product__info
+      .s-popup-product__info-top
+        .s-popup-product__title
+        .s-popup-product__price
+        .s-popup-product__description.a-font_text
+      .s-popup-product__info-bottom
+        form(action="")
+          .s-cart__item-quantity
+            .s-cart__item-quantity__btn.s-cart__item-minus
+              span —
+            input#count.s-cart__item-quantity__input(type="text", name="count" min="0" value="" placeholder="1")
+            .s-cart__item-quantity__btn.s-cart__item-plus
+              span +
+          button.s-popup-product__button(type="submit") Добавить в корзину
+
+    form(action="")
+
 //- data-fancybox="" data-src="#popupCall"
