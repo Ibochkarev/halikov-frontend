@@ -9,6 +9,8 @@ PageList:
     ready: 100
   - file: bespoke-academy.html
     ready: 100
+  - file: bespoke-podcourse.html
+    ready: 100
   - file: academy-offline.html
     ready: 100
   - file: contacts.html
