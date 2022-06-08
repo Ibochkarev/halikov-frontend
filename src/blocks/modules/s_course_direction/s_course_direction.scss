@@ -40,6 +40,7 @@
     padding: rem(10) rem(25);
     text-decoration: none;
     color: $white;
+    border: 0;
     background-color: $blue;
     @include tr(all);
 
@@ -47,7 +48,8 @@
       padding: rem(15) rem(40);
     }
 
-    &:hover {
+    &:hover,
+    &.is-active {
       background-color: $light-brown;
 
       .s-course-direction__item-title {
@@ -68,6 +70,21 @@
     &-title {
       font-family: $primary_font;
       text-transform: uppercase;
+    }
+
+    &-content {
+      display: none;
+      margin-top: rem(35);
+
+      &.is-active {
+        display: block;
+      }
+    }
+
+    &-button {
+      display: block;
+      width: max-content;
+      margin: 0 auto;
     }
   }
 }
