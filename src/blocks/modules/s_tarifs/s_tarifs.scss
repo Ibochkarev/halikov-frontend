@@ -1,0 +1,63 @@
+.s-tarifs {
+  &__bg {
+    width: 100%;
+    background-image: url(../img/s-info/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .section__title {
+    text-align: center;
+    color: $white;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: rem(10);
+
+    @media (min-width: 768px) {
+      grid-gap: rem(20);
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 992px) {
+      grid-gap: rem(30);
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(40) rem(20);
+    text-align: center;
+    color: $white;
+    background: rgba(35, 53, 107, 0.95);
+    flex-direction: column;
+
+    @media (min-width: 992px) {
+      padding: rem(50) rem(40);
+    }
+
+    &-title {
+      margin-bottom: rem(15);
+      text-transform: uppercase;
+
+      @media (min-width: 992px) {
+        margin-bottom: rem(30);
+      }
+    }
+
+    &-list {
+      margin-bottom: rem(25);
+      font-family: $primary_font;
+      text-align: left;
+    }
+
+    &-price {
+      margin-bottom: rem(15);
+    }
+  }
+}

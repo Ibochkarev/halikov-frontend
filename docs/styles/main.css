@@ -4193,6 +4193,50 @@ h6,
   margin-bottom: 0.1875rem;
 }
 
+.s-tarifs__bg {
+  width: 100%;
+  background-image: url(../img/s-info/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.s-tarifs .section__title {
+  text-align: center;
+  color: #fff;
+}
+
+.s-tarifs__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.625rem;
+}
+
+.s-tarifs__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(35, 53, 107, 0.95);
+  flex-direction: column;
+}
+
+.s-tarifs__item-title {
+  margin-bottom: 0.9375rem;
+  text-transform: uppercase;
+}
+
+.s-tarifs__item-list {
+  margin-bottom: 1.5625rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+
+.s-tarifs__item-price {
+  margin-bottom: 0.9375rem;
+}
+
 @media (min-width: 470px) {
   .s-course-direction__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -4525,6 +4569,11 @@ h6,
     grid-gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .s-tarifs__wrapper {
+    grid-gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 786px) {
@@ -4834,6 +4883,19 @@ h6,
   .s-store__items {
     gap: 2.1875rem;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .s-tarifs__wrapper {
+    grid-gap: 1.875rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .s-tarifs__item {
+    padding: 3.125rem 2.5rem;
+  }
+
+  .s-tarifs__item-title {
+    margin-bottom: 1.875rem;
   }
 }
 

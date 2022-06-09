@@ -1,0 +1,48 @@
+-
+  const infoItems = [
+    {
+      title: 'Шью сам',
+      info: [
+        {title: "Запись курсов"},
+        {title: "Нет обратной связи"},
+        {title: "Нет проверки ДЗ"},
+      ],
+      price: '10 990₽'
+    },
+    {
+      title: 'В команде',
+      info: [
+        {title: "Запись курсов"},
+        {title: "Проверка ДЗ в виде отправки чата в телеграм"},
+        {title: "Сертификат"},
+      ],
+      price: '15 990₽'
+    },
+    {
+      title: 'Индивидуальный',
+      info: [
+        {title: "Запись курсов"},
+        {title: "Проверка ДЗ в виде отправки чата в телеграм"},
+        {title: "3 конструкции от Рамиля Халикова в Zoom конференции"},
+        {title: "Сертификат"},
+      ],
+      price: '20 990₽'
+    }
+  ]
+
+section.section.s-tarifs
+  .s-tarifs__bg
+    .l-default
+      .s-tarifs__inner.section
+        h2.section__title.a-font_h2 Курс Брюки
+        .s-tarifs__wrapper
+          each item in infoItems
+            .s-tarifs__item
+              .s-tarifs__item-info
+                .s-tarifs__item-title.a-font_subtitle!=item.title
+                ul.s-tarifs__item-list
+                  each row in item.info
+                    li.a-font_caption!=row.title
+              .s-tarifs__item-bottom
+                .s-tarifs__item-price.a-font_h4!=item.price
+                button.s-tarifs__button.button.button--red(type="button") Купить
