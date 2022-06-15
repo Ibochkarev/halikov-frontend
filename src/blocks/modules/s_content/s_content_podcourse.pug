@@ -1,0 +1,33 @@
+-
+  const contentItems = [
+    {
+      image: './img/s-content/image-1.jpg',
+      title: 'Видеоуроки',
+      text: 'Все уроки курса записаны в 4к качестве. Они открываются тематическими блоками. Вы можете смотреть уроки в удобное время и с любого устройства. Доступ к видео-контенту закрывается через неделю после окончания курса.',
+      link: '',
+      linkText: '',
+    },
+    {
+      image: './img/s-content/image-4.jpg',
+      title: 'Необходимые материалы для курса',
+      text: '<ul><li>Швейная машинка (оверлок)</li><li>Утюг (колодка, ести есть)</li><li>Иглы, наперсток,мел-мыло, булавки</li><li>Ножницы фигурные</li><li>Ножницы обычные</li><li>Нитки</li><li>Лекало подкройных деталей</li><li>Проутюжка</li><li>Сантиметровая лент</li><li>Карандаш белый</li></ul>',
+      link: '#',
+      linkText: 'Купить материалы',
+    },
+  ]
+
+
+section.section.s-content
+  .l-default
+    .s-content__wrapper
+      each item in contentItems
+        .s-content__item.section
+          .s-content__item-col
+            .s-content__item-image
+              img(src=item.image, alt="")
+          .s-content__item-col
+            .s-content__item-info
+              .s-content__item-title.a-font_h2!=item.title
+              .s-content__item-text.a-font_text!=item.text
+              if item.link
+                a.s-content__item-link.button.button--red(href=item.link)!= item.linkText
