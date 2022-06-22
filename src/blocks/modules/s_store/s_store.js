@@ -42,15 +42,18 @@ productButton.forEach(button => {
       productPricenote = button.dataset.pricenote,
       productDescription = button.dataset.description,
       productImage = button.dataset.image,
+      productid = button.dataset.id,
       popupProductTitle = document.querySelector('.s-popup-product__title'),
       popupProductPrice = document.querySelector('.s-popup-product__price'),
       popupProductDescription = document.querySelector('.s-popup-product__description'),
-      popupProductImage = document.querySelector('.s-popup-product__image')
+      popupProductImage = document.querySelector('.s-popup-product__image'),
+      popupProductId = document.querySelector('.s-popup input[name="id"]')
 
       popupProductTitle.innerHTML = productTitle
       popupProductPrice.innerHTML = productPrice,
       popupProductDescription.innerHTML = productDescription,
-      popupProductImage.srcset = productImage
+      popupProductImage.src = productImage,
+      popupProductId.value = productid
   });
 })
 
