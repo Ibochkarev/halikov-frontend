@@ -7,6 +7,8 @@ PageList:
     ready: 100
   - file: blog.html
     ready: 100
+  - file: post.html
+    ready: 100
   - file: bespoke-academy.html
     ready: 100
   - file: bespoke-podcourse.html

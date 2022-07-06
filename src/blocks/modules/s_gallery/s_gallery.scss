@@ -27,24 +27,24 @@
       }
     }
   }
-}
 
-.swiper {
-  &-button-prev:after,
-  &-button-next:after {
-    font-size: rem(26);
-    color: $base;
-  }
-
-  &-button-prev {
-    @media (min-width: 768px) {
-      left: 30%;
+  .swiper {
+    &-button-prev:after,
+    &-button-next:after {
+      font-size: rem(26);
+      color: $base;
     }
-  }
 
-  &-button-next {
-    @media (min-width: 768px) {
-      right: 30%;
+    &-button-prev {
+      @media (min-width: 768px) {
+        left: 30%;
+      }
+    }
+
+    &-button-next {
+      @media (min-width: 768px) {
+        right: 30%;
+      }
     }
   }
 }

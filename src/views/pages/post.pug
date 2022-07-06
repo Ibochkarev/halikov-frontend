@@ -1,0 +1,15 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Блог"
+
+block content
+  .l-default
+    +breadcrumb(['Главная'], 'Блог')
+  include ../../../src/blocks/modules/s_post/s_post.pug
+  include ../../../src/blocks/modules/s_our_courses/s_our_courses.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

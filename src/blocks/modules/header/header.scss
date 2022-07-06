@@ -177,6 +177,29 @@
     display: flex;
     align-items: center;
     grid-gap: rem(16);
+    list-style-type: none;
+
+    li {
+      position: relative;
+
+      &::before {
+        display: none;
+      }
+
+      &:nth-child(2) {
+        &::after {
+          position: absolute;
+          top: 50%;
+          left: rem(-8);
+          display: block;
+          width: rem(1);
+          height: rem(10);
+          transform: translateY(-50%);
+          content: "";
+          background-color: $light-brown;
+        }
+      }
+    }
 
     &-item {
       cursor: pointer;

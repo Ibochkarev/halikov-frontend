@@ -1,0 +1,59 @@
+.s-post {
+  &__info {
+    margin-bottom: rem(20);
+    text-align: center;
+  }
+
+  &__date {
+    justify-content: center;
+    font-family: $primary_font;
+    font-size: rem(16);
+    color: $grey;
+  }
+
+  &__content {
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: rem(15);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $blue;
+    }
+
+    p {
+      font-family: $base_font;
+      font-size: rem(16);
+      line-height: 1.375;
+
+      @media screen and (min-width: 768px) {
+        font-size: rem(18);
+        line-height: 1.55;
+      }
+    }
+
+    ul,
+    ol {
+      margin-bottom: rem(15);
+    }
+
+    blockquote {
+      margin-bottom: rem(15);
+      padding: rem(20);
+      font-weight: 600;
+      color: white;
+      background-color: $blue;
+    }
+
+    iframe {
+      display: block;
+      margin: 0 auto rem(15);
+    }
+  }
+}
