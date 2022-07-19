@@ -1,4 +1,5 @@
 .header {
+  flex: 0 0 auto;
   padding: rem(14) 0;
   background-color: $blue;
 
@@ -246,13 +247,13 @@
     &-item {
       position: relative;
       display: inline-block;
-      margin-bottom: rem(10);
 
       &:hover {
         ul {
           display: block;
           opacity: 1;
           visibility: visible;
+          z-index: 10;
         }
       }
     }

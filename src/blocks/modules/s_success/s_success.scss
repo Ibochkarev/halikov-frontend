@@ -1,0 +1,14 @@
+.s-success {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    svg {
+      width: rem(60);
+      height: rem(60);
+      margin-bottom: rem(25);
+    }
+  }
+}

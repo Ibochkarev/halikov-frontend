@@ -32,28 +32,28 @@ if (document.querySelector('.s-store__tabs')) {
   })
 }
 
-const productButton = document.querySelectorAll('.m-product__button'),
-  productPopup = document.getElementById("popupCart")
+// const productButton = document.querySelectorAll('.m-product__button'),
+//   productPopup = document.getElementById("popupCart")
 
-productButton.forEach(button => {
-  button.addEventListener('click', e => {
-    let productTitle = button.dataset.title,
-      productPrice = button.dataset.price,
-      productPricenote = button.dataset.pricenote,
-      productDescription = button.dataset.description,
-      productImage = button.dataset.image,
-      productid = button.dataset.id,
-      popupProductTitle = document.querySelector('.s-popup-product__title'),
-      popupProductPrice = document.querySelector('.s-popup-product__price'),
-      popupProductDescription = document.querySelector('.s-popup-product__description'),
-      popupProductImage = document.querySelector('.s-popup-product__image'),
-      popupProductId = document.querySelector('.s-popup input[name="id"]')
+// productButton.forEach(button => {
+//   button.addEventListener('click', e => {
+//     let productTitle = button.dataset.title,
+//       productPrice = button.dataset.price,
+//       productPricenote = button.dataset.pricenote,
+//       productDescription = button.dataset.description,
+//       productImage = button.dataset.image,
+//       productid = button.dataset.id,
+//       popupProductTitle = document.querySelector('.s-popup-product__title'),
+//       popupProductPrice = document.querySelector('.s-popup-product__price'),
+//       popupProductDescription = document.querySelector('.s-popup-product__description'),
+//       popupProductImage = document.querySelector('.s-popup-product__image'),
+//       popupProductId = document.querySelector('.s-popup input[name="id"]')
 
-      popupProductTitle.innerHTML = productTitle
-      popupProductPrice.innerHTML = productPrice,
-      popupProductDescription.innerHTML = productDescription,
-      popupProductImage.src = productImage,
-      popupProductId.value = productid
-  });
-})
+//       popupProductTitle.innerHTML = productTitle
+//       popupProductPrice.innerHTML = productPrice,
+//       popupProductDescription.innerHTML = productDescription,
+//       popupProductImage.src = productImage,
+//       popupProductId.value = productid
+//   });
+// })
 

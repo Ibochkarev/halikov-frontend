@@ -1520,24 +1520,27 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 html,
 body {
+  height: 100%;
   min-width: 20rem;
   font-size: 16px;
   line-height: 1.2;
 }
 
 body {
+  display: flex;
   min-height: 100vh;
   font-family: "Lora", sans-serif;
   color: #252323;
   background: #fff;
+  flex-direction: column;
 }
 
 .wrapper {
   margin-bottom: auto;
+  flex: 1 0 auto;
 }
 
 .l-default {
-  z-index: 5;
   position: relative;
   width: 100%;
   max-width: 1200px;
@@ -1743,6 +1746,10 @@ h6,
 
 .fancybox__container {
   z-index: 10000;
+}
+
+.jGrowl {
+  z-index: 9999999 !important;
 }
 
 .icon-logo {
@@ -1958,8 +1965,14 @@ h6,
   color: #23356b;
 }
 
-.breadcrumb__link:hover {
+.breadcrumb__link {
+  text-decoration: none;
   color: #23356b;
+  transition: 0.5s all ease;
+}
+
+.breadcrumb__link:hover {
+  opacity: 0.7;
 }
 
 .breadcrumb__link-current {
@@ -2399,6 +2412,7 @@ h6,
 }
 
 .header {
+  flex: 0 0 auto;
   padding: 0.875rem 0;
   background-color: #23356b;
 }
@@ -2597,13 +2611,13 @@ h6,
 .header__menu-item {
   position: relative;
   display: inline-block;
-  margin-bottom: 0.625rem;
 }
 
 .header__menu-item:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
+  z-index: 10;
 }
 
 .header__menu ul {
@@ -2644,6 +2658,7 @@ h6,
 }
 
 .footer {
+  flex: 0 0 auto;
   padding: 1.875rem 0 2.1875rem;
   color: #fff;
   background-color: #23356b;
@@ -2910,6 +2925,10 @@ h6,
   display: block;
   width: max-content;
   margin: 0 auto;
+}
+
+.s-course-direction .s-included__wrapper {
+  margin-bottom: 1.5625rem;
 }
 
 .s-intro {
@@ -3801,7 +3820,6 @@ h6,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: -17.5rem;
   padding: 1.875rem;
   flex-wrap: wrap;
   background-color: #23356b;
@@ -4412,6 +4430,19 @@ h6,
 .s-post__content iframe {
   display: block;
   margin: 0 auto 0.9375rem;
+}
+
+.s-success__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.s-success__inner svg {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-bottom: 1.5625rem;
 }
 
 @media (min-width: 470px) {
@@ -5301,7 +5332,6 @@ h6,
 
 @media (max-width: 991px) {
   .s-cost__inner {
-    margin-top: 2.5rem;
     flex-direction: column-reverse;
   }
 

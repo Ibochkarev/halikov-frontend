@@ -2,3 +2,5 @@ mixin m_video_intro(linkVideo, poster, className)
   .s-video-intro(class!=className)
     video(poster!=poster autoplay='' playsinline='' muted='' loop='')
       source(src!=linkVideo type='video/mp4')
+    //- .iframe__wrapper
+    //-   iframe.responsive-iframe(src!=linkVideo + '?start=0&autostart=1&title=0&volume=0', frameborder="0", scrolling="no",  allow="autoplay; fullscreen")

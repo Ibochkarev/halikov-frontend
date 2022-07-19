@@ -3,14 +3,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: rem(-280);
+    // margin-top: rem(-280);
     padding: rem(30);
     flex-wrap: wrap;
     background-color: $blue;
     gap: rem(60);
 
     @media (max-width: 991px) {
-      margin-top: rem(40);
+      // margin-top: rem(40);
       flex-direction: column-reverse;
     }
   }
